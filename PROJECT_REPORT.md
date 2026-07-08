@@ -1,10 +1,21 @@
 # CVRP Algorithm Selection Project Report
 
-This project is a student-scale reproduction of a machine-learning-based algorithm-selection pipeline for symmetric Euclidean Capacitated Vehicle Routing Problems (CVRP). It deliberately uses existing classical heuristics from VeRyPy instead of reimplementing standard CVRP algorithms.
+This project is a student-scale implementation inspired by the reference paper on machine-learning-based algorithm selection for symmetric Euclidean Capacitated Vehicle Routing Problems (CVRP). It deliberately uses existing classical heuristics from VeRyPy instead of reimplementing standard CVRP algorithms.
 
 ## Scope
 
 The implemented scope is one-depot, homogeneous-capacity CVRP with heterogeneous positive customer demands. Routes start and end at the depot. The project does not include VRPTW, pickup and delivery, heterogeneous fleets, exact solvers, reinforcement learning, OR-Tools as a production dependency, or a custom HGS implementation.
+
+## Contribution Relative to the Reference
+
+This is not a full reproduction of the reference paper. The contribution is a compact, independently verified algorithm-selection pipeline adapted to the project scope:
+
+- A different five-solver VeRyPy portfolio selected through a solver audit rather than copied directly from the paper.
+- Heterogeneous-demand CVRP instances with one depot and homogeneous vehicle capacity.
+- A reproducible synthetic generator covering spatial families, depot positions, and demand regimes.
+- An independently constructed pre-solution feature set rather than paper-identical features.
+- Independent feasibility, cost, and leakage verification for solver outputs and model inputs.
+- Evaluation using SBS, VBS, regret, cost ratio, and separate runtime trade-off reporting.
 
 ## Reproducibility And Distance Convention
 
@@ -74,6 +85,8 @@ The single Wren-Holliday Sweep failure was handled as a solver failure; labels w
 
 The primary objective is route cost. Runtime is reported separately as a secondary metric.
 
+VBS is an oracle baseline, not a trained classifier. Its classification values are shown only to make the table complete; VBS has zero regret by definition and is used as the virtual best portfolio bound.
+
 | method | accuracy | balanced_accuracy | macro_f1 | mean_regret | median_regret | p95_regret | mean_cost_ratio | within_1_percent | within_5_percent | mean_selected_solver_runtime |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | VBS | 1.0000 | 1.0000 | 1.0000 | 0.0000 | 0.0000 | 0.0000 | 1.0000 | 1.0000 | 1.0000 | 0.3590 |
@@ -119,34 +132,9 @@ These should be interpreted as predictive associations, not causal claims.
 
 ## Grouped Performance
 
-By customer count:
+The best grouped result by customer count is on 100-customer instances, with accuracy 0.482 and mean regret 0.0065. The weakest demand regime is `high_pressure`, with accuracy 0.293 and mean regret 0.0210. The best depot-position group is `corner`, with accuracy 0.447 and mean regret 0.0115.
 
-|  |
-|  |
-|  |
-|  |
-|  |
-|  |
-
-By demand regime:
-
-|  |
-|  |
-|  |
-|  |
-|  |
-|  |
-
-By depot position:
-
-|  |
-|  |
-|  |
-|  |
-|  |
-|  |
-
-The best model performs best on 100-customer instances and worst on high-pressure demand regimes. This suggests that capacity pressure is a harder regime and that the selector generalises better when there is more geometric structure to measure.
+By true best-solver class, `MJ76-insertion/all-strain` and `WH72-sweep/both-directions` are the hardest classes for the selector, with lower recall/accuracy than `Be83-RFCS/default` and `CW64-PS/minimize-distance+2opt1`. This suggests that some solver niches are harder to identify from the current pre-solution feature set even though they contribute useful portfolio complementarity.
 
 ## Integrity Checks
 
