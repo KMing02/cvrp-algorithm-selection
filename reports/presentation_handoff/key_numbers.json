@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-07-08T21:54:07Z",
+  "dataset_size": 1260,
+  "train_rows": 1008,
+  "test_rows": 252,
+  "distance_convention": "cvrplib_euc_2d",
+  "final_portfolio": [
+    "CW64-PS/minimize-distance+2opt1",
+    "MJ76-insertion/all-strain",
+    "WH72-sweep/both-directions",
+    "CMT79-2phase/default",
+    "Be83-RFCS/default"
+  ],
+  "excluded_audited_solver": "Gaskell-PS/both-savings",
+  "excluded_reason": "Won only 3 of 240 development instances in the six-solver audit, too few for a learnable class.",
+  "label_counts": {
+    "Be83-RFCS/default": 323,
+    "CMT79-2phase/default": 119,
+    "CW64-PS/minimize-distance+2opt1": 314,
+    "MJ76-insertion/all-strain": 266,
+    "WH72-sweep/both-directions": 238
+  },
+  "label_percentages": {
+    "Be83-RFCS/default": 0.2563492063492063,
+    "CMT79-2phase/default": 0.09444444444444444,
+    "CW64-PS/minimize-distance+2opt1": 0.2492063492063492,
+    "MJ76-insertion/all-strain": 0.2111111111111111,
+    "WH72-sweep/both-directions": 0.18888888888888888
+  },
+  "solver_failure_counts": {
+    "Be83-RFCS/default": 0,
+    "CMT79-2phase/default": 0,
+    "CW64-PS/minimize-distance+2opt1": 0,
+    "MJ76-insertion/all-strain": 0,
+    "WH72-sweep/both-directions": 1
+  },
+  "sbs_solver": "MJ76-insertion/all-strain",
+  "best_ml_model": "RandomForest",
+  "random_forest": {
+    "accuracy": 0.4007936507936508,
+    "balanced_accuracy": 0.3785330486454533,
+    "macro_f1": 0.3783511848635381,
+    "mean_regret": 0.0124044248282041,
+    "median_regret": 0.0027370763692849,
+    "p95_regret": 0.0465394548063127,
+    "mean_cost_ratio": 1.012404424828204,
+    "within_1_percent": 0.6309523809523809,
+    "within_5_percent": 0.9563492063492064,
+    "mean_selected_solver_runtime": 0.4625450877943039
+  },
+  "sbs": {
+    "accuracy": 0.2103174603174603,
+    "balanced_accuracy": 0.2,
+    "macro_f1": 0.0695081967213114,
+    "mean_regret": 0.0167492672480707,
+    "median_regret": 0.0118707256307839,
+    "p95_regret": 0.0521744602958258,
+    "mean_cost_ratio": 1.016749267248071,
+    "within_1_percent": 0.4523809523809524,
+    "within_5_percent": 0.9444444444444444,
+    "mean_selected_solver_runtime": 0.2138826273107302
+  },
+  "knn": {
+    "accuracy": 0.3849206349206349,
+    "balanced_accuracy": 0.3587659897977039,
+    "macro_f1": 0.3534766488413546,
+    "mean_regret": 0.0131628534253612,
+    "median_regret": 0.0032301561220391,
+    "p95_regret": 0.0531152105812738,
+    "mean_cost_ratio": 1.0131628534253612,
+    "within_1_percent": 0.6071428571428571,
+    "within_5_percent": 0.9444444444444444,
+    "mean_selected_solver_runtime": 0.3617545444978445
+  },
+  "top_random_forest_features": [
+    {
+      "feature": "capacity_pressure",
+      "importance": 0.0438819977056418
+    },
+    {
+      "feature": "demand_std",
+      "importance": 0.0418612068668956
+    },
+    {
+      "feature": "depot_distance_std",
+      "importance": 0.0407714063749332
+    },
+    {
+      "feature": "depot_centrality_normalized",
+      "importance": 0.0401950380823175
+    },
+    {
+      "feature": "total_demand",
+      "importance": 0.0395873641205401
+    },
+    {
+      "feature": "depot_to_centroid_distance",
+      "importance": 0.0367491269524846
+    },
+    {
+      "feature": "demand_mean",
+      "importance": 0.0357531022452018
+    },
+    {
+      "feature": "depot_distance_mean",
+      "importance": 0.0341595395026043
+    },
+    {
+      "feature": "demand_cv",
+      "importance": 0.0326213254563574
+    },
+    {
+      "feature": "depot_distance_max",
+      "importance": 0.0318135297056578
+    }
+  ],
+  "optional_seed_held_out_robustness": {
+    "split": "train seeds except 6; test seed 6",
+    "heldout_seed": 6,
+    "train_rows": 1080,
+    "test_rows": 180,
+    "sbs_solver": "MJ76-insertion/all-strain",
+    "random_forest": {
+      "accuracy": 0.4222222222222222,
+      "balanced_accuracy": 0.3764839410827634,
+      "macro_f1": 0.36419407738497,
+      "mean_regret": 0.009114581851171633,
+      "median_regret": 0.0,
+      "p95_regret": 0.04189211368547745,
+      "mean_cost_ratio": 1.0091145818511718,
+      "within_1_percent": 0.7166666666666667,
+      "within_5_percent": 0.9611111111111111
+    },
+    "sbs": {
+      "accuracy": 0.2388888888888889,
+      "balanced_accuracy": 0.2,
+      "macro_f1": 0.07713004484304933,
+      "mean_regret": 0.014733747701025122,
+      "median_regret": 0.008428032194284117,
+      "p95_regret": 0.04808178638687111,
+      "mean_cost_ratio": 1.014733747701025,
+      "within_1_percent": 0.5222222222222223,
+      "within_5_percent": 0.9555555555555556
+    }
+  }
+}
