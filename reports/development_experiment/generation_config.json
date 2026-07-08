@@ -1,0 +1,2162 @@
+[
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 20,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "uniform"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "clustered"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "two_clusters"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "radial"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "center",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "corner",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_variance",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "high_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 0,
+    "spatial_family": "mixed"
+  },
+  {
+    "demand_regime": "low_pressure",
+    "depot_position": "random",
+    "distance_convention": "cvrplib_euc_2d",
+    "n_customers": 50,
+    "params": {},
+    "seed": 1,
+    "spatial_family": "mixed"
+  }
+]

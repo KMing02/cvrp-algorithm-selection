@@ -1,0 +1,27 @@
+[project]
+name = "cvrp-algorithm-selection"
+version = "0.1.0"
+description = "Student-scale CVRP algorithm-selection foundation"
+readme = "README.md"
+authors = [
+    { name = "KMing02", email = "676906733@qq.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "pytest>=9.1.1",
+    "scikit-learn>=1.7.2",
+    "verypy",
+]
+
+[project.scripts]
+cvrp-algorithm-selection = "cvrp_algorithm_selection:main"
+
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+verypy = { git = "https://github.com/yorak/VeRyPy.git", rev = "8698f910ffcfb4bc8743aedbf203d6de72fbe006" }

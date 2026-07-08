@@ -1,0 +1,190 @@
+{
+  "failed_solver_runs": 0,
+  "failure_count_by_solver": {
+    "be83_rfcs_default": 0,
+    "cmt79_2phase_default": 0,
+    "cw64_ps_minimize_distance_plus_2opt1": 0,
+    "mj76_insertion_all_strain": 0,
+    "wh72_sweep_both_directions": 0
+  },
+  "feature_quality": {
+    "constant_features": [],
+    "non_finite_features": []
+  },
+  "label_breakdowns": {
+    "customer_count": {
+      "20": {
+        "Be83-RFCS/default": 32,
+        "CMT79-2phase/default": 19,
+        "CW64-PS/minimize-distance+2opt1": 26,
+        "MJ76-insertion/all-strain": 15,
+        "WH72-sweep/both-directions": 28
+      },
+      "50": {
+        "Be83-RFCS/default": 26,
+        "CMT79-2phase/default": 9,
+        "CW64-PS/minimize-distance+2opt1": 26,
+        "MJ76-insertion/all-strain": 29,
+        "WH72-sweep/both-directions": 30
+      }
+    },
+    "demand_regime": {
+      "high_pressure": {
+        "Be83-RFCS/default": 7,
+        "CMT79-2phase/default": 3,
+        "CW64-PS/minimize-distance+2opt1": 16,
+        "MJ76-insertion/all-strain": 18,
+        "WH72-sweep/both-directions": 16
+      },
+      "high_variance": {
+        "Be83-RFCS/default": 8,
+        "CMT79-2phase/default": 7,
+        "CW64-PS/minimize-distance+2opt1": 20,
+        "MJ76-insertion/all-strain": 12,
+        "WH72-sweep/both-directions": 13
+      },
+      "low_pressure": {
+        "Be83-RFCS/default": 22,
+        "CMT79-2phase/default": 12,
+        "CW64-PS/minimize-distance+2opt1": 5,
+        "MJ76-insertion/all-strain": 3,
+        "WH72-sweep/both-directions": 18
+      },
+      "low_variance": {
+        "Be83-RFCS/default": 21,
+        "CMT79-2phase/default": 6,
+        "CW64-PS/minimize-distance+2opt1": 11,
+        "MJ76-insertion/all-strain": 11,
+        "WH72-sweep/both-directions": 11
+      }
+    },
+    "depot_position": {
+      "center": {
+        "Be83-RFCS/default": 24,
+        "CMT79-2phase/default": 9,
+        "CW64-PS/minimize-distance+2opt1": 15,
+        "MJ76-insertion/all-strain": 15,
+        "WH72-sweep/both-directions": 17
+      },
+      "corner": {
+        "Be83-RFCS/default": 16,
+        "CMT79-2phase/default": 13,
+        "CW64-PS/minimize-distance+2opt1": 15,
+        "MJ76-insertion/all-strain": 16,
+        "WH72-sweep/both-directions": 20
+      },
+      "random": {
+        "Be83-RFCS/default": 18,
+        "CMT79-2phase/default": 6,
+        "CW64-PS/minimize-distance+2opt1": 22,
+        "MJ76-insertion/all-strain": 13,
+        "WH72-sweep/both-directions": 21
+      }
+    },
+    "spatial_family": {
+      "clustered": {
+        "Be83-RFCS/default": 12,
+        "CMT79-2phase/default": 8,
+        "CW64-PS/minimize-distance+2opt1": 7,
+        "MJ76-insertion/all-strain": 8,
+        "WH72-sweep/both-directions": 13
+      },
+      "mixed": {
+        "Be83-RFCS/default": 10,
+        "CMT79-2phase/default": 3,
+        "CW64-PS/minimize-distance+2opt1": 11,
+        "MJ76-insertion/all-strain": 8,
+        "WH72-sweep/both-directions": 16
+      },
+      "radial": {
+        "Be83-RFCS/default": 11,
+        "CMT79-2phase/default": 7,
+        "CW64-PS/minimize-distance+2opt1": 13,
+        "MJ76-insertion/all-strain": 5,
+        "WH72-sweep/both-directions": 12
+      },
+      "two_clusters": {
+        "Be83-RFCS/default": 6,
+        "CMT79-2phase/default": 8,
+        "CW64-PS/minimize-distance+2opt1": 10,
+        "MJ76-insertion/all-strain": 12,
+        "WH72-sweep/both-directions": 12
+      },
+      "uniform": {
+        "Be83-RFCS/default": 19,
+        "CMT79-2phase/default": 2,
+        "CW64-PS/minimize-distance+2opt1": 11,
+        "MJ76-insertion/all-strain": 11,
+        "WH72-sweep/both-directions": 5
+      }
+    }
+  },
+  "label_counts": {
+    "Be83-RFCS/default": 58,
+    "CMT79-2phase/default": 28,
+    "CW64-PS/minimize-distance+2opt1": 52,
+    "MJ76-insertion/all-strain": 44,
+    "WH72-sweep/both-directions": 58
+  },
+  "label_percentages": {
+    "Be83-RFCS/default": 0.24166666666666667,
+    "CMT79-2phase/default": 0.11666666666666667,
+    "CW64-PS/minimize-distance+2opt1": 0.21666666666666667,
+    "MJ76-insertion/all-strain": 0.18333333333333332,
+    "WH72-sweep/both-directions": 0.24166666666666667
+  },
+  "mean_cost_per_solver": {
+    "be83_rfcs_default": 776.225,
+    "cmt79_2phase_default": 794.4916666666667,
+    "cw64_ps_minimize_distance_plus_2opt1": 782.5791666666667,
+    "mj76_insertion_all_strain": 770.325,
+    "wh72_sweep_both_directions": 775.9583333333334
+  },
+  "mean_runtime_per_solver": {
+    "be83_rfcs_default": 0.1577502944463049,
+    "cmt79_2phase_default": 0.006439822212754128,
+    "cw64_ps_minimize_distance_plus_2opt1": 0.003436801223142538,
+    "mj76_insertion_all_strain": 0.08660014238363753,
+    "wh72_sweep_both_directions": 0.2745814392187943
+  },
+  "number_of_instances": 240,
+  "solver_gap_summary": {
+    "be83_rfcs_default": {
+      "best_frequency": 0.24166666666666667,
+      "mean_relative_cost_gap": 0.02174944641463135,
+      "median_relative_cost_gap": 0.007760048171007075,
+      "within_1_percent_frequency": 0.5416666666666666,
+      "within_5_percent_frequency": 0.875
+    },
+    "cmt79_2phase_default": {
+      "best_frequency": 0.11666666666666667,
+      "mean_relative_cost_gap": 0.04950627420890141,
+      "median_relative_cost_gap": 0.03517994761266802,
+      "within_1_percent_frequency": 0.21666666666666667,
+      "within_5_percent_frequency": 0.5833333333333334
+    },
+    "cw64_ps_minimize_distance_plus_2opt1": {
+      "best_frequency": 0.21666666666666667,
+      "mean_relative_cost_gap": 0.03403654020738897,
+      "median_relative_cost_gap": 0.024306727755003615,
+      "within_1_percent_frequency": 0.325,
+      "within_5_percent_frequency": 0.75
+    },
+    "mj76_insertion_all_strain": {
+      "best_frequency": 0.18333333333333332,
+      "mean_relative_cost_gap": 0.018529108507860312,
+      "median_relative_cost_gap": 0.011555080837015098,
+      "within_1_percent_frequency": 0.4666666666666667,
+      "within_5_percent_frequency": 0.9083333333333333
+    },
+    "wh72_sweep_both_directions": {
+      "best_frequency": 0.24166666666666667,
+      "mean_relative_cost_gap": 0.021207347604970915,
+      "median_relative_cost_gap": 0.008584456820763394,
+      "within_1_percent_frequency": 0.5125,
+      "within_5_percent_frequency": 0.875
+    }
+  },
+  "successful_solver_runs": 1200,
+  "valid_experiment_rows": 240
+}

@@ -1,0 +1,151 @@
+{
+  "customer_count": {
+    "20": {
+      "Be83-RFCS/default": 33,
+      "CMT79-2phase/default": 19,
+      "CW64-PS/minimize-distance": 13,
+      "CW64-PS/minimize-distance+2opt1": 10,
+      "CW64-SS/farthest-seed": 1,
+      "GM74-sweep/both-directions": 1,
+      "Gaskell-PS/both-savings": 1,
+      "MJ76-insertion/all-strain": 15,
+      "WH72-sweep/both-directions": 27
+    },
+    "50": {
+      "Be83-RFCS/default": 24,
+      "CMT79-2phase/default": 8,
+      "CW64-PS/minimize-distance": 11,
+      "CW64-PS/minimize-distance+2opt1": 13,
+      "GM74-sweep/both-directions": 5,
+      "Gaskell-PS/both-savings": 2,
+      "MJ76-insertion/all-strain": 31,
+      "Ty68-NN/default": 1,
+      "WH72-sweep/both-directions": 25
+    }
+  },
+  "demand_regime": {
+    "high_pressure": {
+      "Be83-RFCS/default": 7,
+      "CMT79-2phase/default": 3,
+      "CW64-PS/minimize-distance": 8,
+      "CW64-PS/minimize-distance+2opt1": 6,
+      "CW64-SS/farthest-seed": 1,
+      "Gaskell-PS/both-savings": 1,
+      "MJ76-insertion/all-strain": 18,
+      "Ty68-NN/default": 1,
+      "WH72-sweep/both-directions": 15
+    },
+    "high_variance": {
+      "Be83-RFCS/default": 9,
+      "CMT79-2phase/default": 7,
+      "CW64-PS/minimize-distance": 9,
+      "CW64-PS/minimize-distance+2opt1": 10,
+      "GM74-sweep/both-directions": 1,
+      "Gaskell-PS/both-savings": 1,
+      "MJ76-insertion/all-strain": 14,
+      "WH72-sweep/both-directions": 9
+    },
+    "low_pressure": {
+      "Be83-RFCS/default": 22,
+      "CMT79-2phase/default": 12,
+      "CW64-PS/minimize-distance": 2,
+      "CW64-PS/minimize-distance+2opt1": 2,
+      "GM74-sweep/both-directions": 2,
+      "MJ76-insertion/all-strain": 3,
+      "WH72-sweep/both-directions": 17
+    },
+    "low_variance": {
+      "Be83-RFCS/default": 19,
+      "CMT79-2phase/default": 5,
+      "CW64-PS/minimize-distance": 5,
+      "CW64-PS/minimize-distance+2opt1": 5,
+      "GM74-sweep/both-directions": 3,
+      "Gaskell-PS/both-savings": 1,
+      "MJ76-insertion/all-strain": 11,
+      "WH72-sweep/both-directions": 11
+    }
+  },
+  "depot_position": {
+    "center": {
+      "Be83-RFCS/default": 23,
+      "CMT79-2phase/default": 9,
+      "CW64-PS/minimize-distance": 8,
+      "CW64-PS/minimize-distance+2opt1": 5,
+      "GM74-sweep/both-directions": 2,
+      "Gaskell-PS/both-savings": 1,
+      "MJ76-insertion/all-strain": 14,
+      "WH72-sweep/both-directions": 18
+    },
+    "corner": {
+      "Be83-RFCS/default": 16,
+      "CMT79-2phase/default": 12,
+      "CW64-PS/minimize-distance": 6,
+      "CW64-PS/minimize-distance+2opt1": 7,
+      "CW64-SS/farthest-seed": 1,
+      "GM74-sweep/both-directions": 1,
+      "Gaskell-PS/both-savings": 2,
+      "MJ76-insertion/all-strain": 18,
+      "Ty68-NN/default": 1,
+      "WH72-sweep/both-directions": 16
+    },
+    "random": {
+      "Be83-RFCS/default": 18,
+      "CMT79-2phase/default": 6,
+      "CW64-PS/minimize-distance": 10,
+      "CW64-PS/minimize-distance+2opt1": 11,
+      "GM74-sweep/both-directions": 3,
+      "MJ76-insertion/all-strain": 14,
+      "WH72-sweep/both-directions": 18
+    }
+  },
+  "spatial_family": {
+    "clustered": {
+      "Be83-RFCS/default": 12,
+      "CMT79-2phase/default": 8,
+      "CW64-PS/minimize-distance": 2,
+      "CW64-PS/minimize-distance+2opt1": 3,
+      "GM74-sweep/both-directions": 1,
+      "MJ76-insertion/all-strain": 9,
+      "Ty68-NN/default": 1,
+      "WH72-sweep/both-directions": 12
+    },
+    "mixed": {
+      "Be83-RFCS/default": 10,
+      "CMT79-2phase/default": 3,
+      "CW64-PS/minimize-distance": 8,
+      "CW64-PS/minimize-distance+2opt1": 1,
+      "CW64-SS/farthest-seed": 1,
+      "GM74-sweep/both-directions": 1,
+      "MJ76-insertion/all-strain": 10,
+      "WH72-sweep/both-directions": 14
+    },
+    "radial": {
+      "Be83-RFCS/default": 10,
+      "CMT79-2phase/default": 6,
+      "CW64-PS/minimize-distance": 3,
+      "CW64-PS/minimize-distance+2opt1": 9,
+      "GM74-sweep/both-directions": 2,
+      "Gaskell-PS/both-savings": 2,
+      "MJ76-insertion/all-strain": 6,
+      "WH72-sweep/both-directions": 10
+    },
+    "two_clusters": {
+      "Be83-RFCS/default": 7,
+      "CMT79-2phase/default": 8,
+      "CW64-PS/minimize-distance": 5,
+      "CW64-PS/minimize-distance+2opt1": 5,
+      "MJ76-insertion/all-strain": 11,
+      "WH72-sweep/both-directions": 12
+    },
+    "uniform": {
+      "Be83-RFCS/default": 18,
+      "CMT79-2phase/default": 2,
+      "CW64-PS/minimize-distance": 6,
+      "CW64-PS/minimize-distance+2opt1": 5,
+      "GM74-sweep/both-directions": 2,
+      "Gaskell-PS/both-savings": 1,
+      "MJ76-insertion/all-strain": 10,
+      "WH72-sweep/both-directions": 4
+    }
+  }
+}

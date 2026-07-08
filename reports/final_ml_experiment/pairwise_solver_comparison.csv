@@ -1,0 +1,11 @@
+solver_a,solver_b,a_beats_b,b_beats_a,ties,a_avg_relative_improvement_when_beats,b_avg_relative_improvement_when_beats
+CW64-PS/minimize-distance+2opt1,MJ76-insertion/all-strain,454,719,87,0.018162100527542253,0.025470244321711792
+CW64-PS/minimize-distance+2opt1,WH72-sweep/both-directions,613,603,44,0.045545750846271646,0.0323639755397171
+CW64-PS/minimize-distance+2opt1,CMT79-2phase/default,783,448,29,0.039446930615593456,0.026270255420484345
+CW64-PS/minimize-distance+2opt1,Be83-RFCS/default,526,676,58,0.029503779073648387,0.028374695973114303
+MJ76-insertion/all-strain,WH72-sweep/both-directions,701,471,88,0.04239156818542409,0.02399487077660525
+MJ76-insertion/all-strain,CMT79-2phase/default,903,295,62,0.038480730571834584,0.018987154303183946
+MJ76-insertion/all-strain,Be83-RFCS/default,600,554,106,0.030661652812052194,0.021708918124993083
+WH72-sweep/both-directions,CMT79-2phase/default,727,479,54,0.04275215795303139,0.042888279946356224
+WH72-sweep/both-directions,Be83-RFCS/default,496,650,114,0.026284161494279812,0.03870146524447745
+CMT79-2phase/default,Be83-RFCS/default,364,836,60,0.028224332686359734,0.03948677794214666

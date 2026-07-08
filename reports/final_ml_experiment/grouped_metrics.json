@@ -1,0 +1,132 @@
+{
+  "best_solver": {
+    "Be83-RFCS/default": {
+      "accuracy": 0.5384615384615384,
+      "mean_regret": 0.011739889017098161,
+      "n": 65,
+      "within_1_percent": 0.6923076923076923
+    },
+    "CMT79-2phase/default": {
+      "accuracy": 0.25,
+      "mean_regret": 0.004767032846328598,
+      "n": 24,
+      "within_1_percent": 0.8333333333333334
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "accuracy": 0.42857142857142855,
+      "mean_regret": 0.00935411467571561,
+      "n": 63,
+      "within_1_percent": 0.6666666666666666
+    },
+    "MJ76-insertion/all-strain": {
+      "accuracy": 0.20754716981132076,
+      "mean_regret": 0.017535233320032435,
+      "n": 53,
+      "within_1_percent": 0.5094339622641509
+    },
+    "WH72-sweep/both-directions": {
+      "accuracy": 0.46808510638297873,
+      "mean_regret": 0.015526316845795191,
+      "n": 47,
+      "within_1_percent": 0.5319148936170213
+    }
+  },
+  "customer_count": {
+    "100": {
+      "accuracy": 0.4819277108433735,
+      "mean_regret": 0.006526611029375482,
+      "n": 83,
+      "within_1_percent": 0.7108433734939759
+    },
+    "20": {
+      "accuracy": 0.37037037037037035,
+      "mean_regret": 0.017343550029061836,
+      "n": 81,
+      "within_1_percent": 0.5802469135802469
+    },
+    "50": {
+      "accuracy": 0.3522727272727273,
+      "mean_regret": 0.013402031692218975,
+      "n": 88,
+      "within_1_percent": 0.6022727272727273
+    }
+  },
+  "demand_regime": {
+    "high_pressure": {
+      "accuracy": 0.29310344827586204,
+      "mean_regret": 0.020995987215812563,
+      "n": 58,
+      "within_1_percent": 0.46551724137931033
+    },
+    "high_variance": {
+      "accuracy": 0.4520547945205479,
+      "mean_regret": 0.010696169382357838,
+      "n": 73,
+      "within_1_percent": 0.684931506849315
+    },
+    "low_pressure": {
+      "accuracy": 0.453125,
+      "mean_regret": 0.008875383960511291,
+      "n": 64,
+      "within_1_percent": 0.6875
+    },
+    "low_variance": {
+      "accuracy": 0.38596491228070173,
+      "mean_regret": 0.009812330873780178,
+      "n": 57,
+      "within_1_percent": 0.6666666666666666
+    }
+  },
+  "depot_position": {
+    "center": {
+      "accuracy": 0.42391304347826086,
+      "mean_regret": 0.014186094451020667,
+      "n": 92,
+      "within_1_percent": 0.6086956521739131
+    },
+    "corner": {
+      "accuracy": 0.4473684210526316,
+      "mean_regret": 0.011476990081160708,
+      "n": 76,
+      "within_1_percent": 0.6973684210526315
+    },
+    "random": {
+      "accuracy": 0.3333333333333333,
+      "mean_regret": 0.011292180012444383,
+      "n": 84,
+      "within_1_percent": 0.5952380952380952
+    }
+  },
+  "spatial_family": {
+    "clustered": {
+      "accuracy": 0.3877551020408163,
+      "mean_regret": 0.013323652723675306,
+      "n": 49,
+      "within_1_percent": 0.6326530612244898
+    },
+    "mixed": {
+      "accuracy": 0.45454545454545453,
+      "mean_regret": 0.010522152676173263,
+      "n": 55,
+      "within_1_percent": 0.6545454545454545
+    },
+    "radial": {
+      "accuracy": 0.3333333333333333,
+      "mean_regret": 0.011845978330545756,
+      "n": 45,
+      "within_1_percent": 0.5777777777777777
+    },
+    "two_clusters": {
+      "accuracy": 0.4375,
+      "mean_regret": 0.011647054417425627,
+      "n": 48,
+      "within_1_percent": 0.6875
+    },
+    "uniform": {
+      "accuracy": 0.38181818181818183,
+      "mean_regret": 0.014585637075396998,
+      "n": 55,
+      "within_1_percent": 0.6
+    }
+  }
+}

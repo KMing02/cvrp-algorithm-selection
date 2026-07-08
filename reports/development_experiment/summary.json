@@ -1,0 +1,131 @@
+{
+  "elapsed_seconds": 6.929878083989024,
+  "failed_solver_runs": 0,
+  "failure_count_by_solver": {
+    "basic_sweep_both_directions_best_start": 0,
+    "cw64_ps_minimize_distance": 0,
+    "snn_farthest_seed_both_route_ends": 0
+  },
+  "feature_quality": {
+    "constant_features": [],
+    "non_finite_features": []
+  },
+  "label_breakdowns": {
+    "customer_count": {
+      "20": {
+        "CW64-PS/minimize-distance": 112,
+        "SNN/farthest-seed/both-route-ends": 4,
+        "basic-sweep/both-directions/best-start": 4
+      },
+      "50": {
+        "CW64-PS/minimize-distance": 118,
+        "SNN/farthest-seed/both-route-ends": 2
+      }
+    },
+    "demand_regime": {
+      "high_pressure": {
+        "CW64-PS/minimize-distance": 55,
+        "SNN/farthest-seed/both-route-ends": 3,
+        "basic-sweep/both-directions/best-start": 2
+      },
+      "high_variance": {
+        "CW64-PS/minimize-distance": 60
+      },
+      "low_pressure": {
+        "CW64-PS/minimize-distance": 58,
+        "SNN/farthest-seed/both-route-ends": 1,
+        "basic-sweep/both-directions/best-start": 1
+      },
+      "low_variance": {
+        "CW64-PS/minimize-distance": 57,
+        "SNN/farthest-seed/both-route-ends": 2,
+        "basic-sweep/both-directions/best-start": 1
+      }
+    },
+    "depot_position": {
+      "center": {
+        "CW64-PS/minimize-distance": 75,
+        "SNN/farthest-seed/both-route-ends": 3,
+        "basic-sweep/both-directions/best-start": 2
+      },
+      "corner": {
+        "CW64-PS/minimize-distance": 76,
+        "SNN/farthest-seed/both-route-ends": 3,
+        "basic-sweep/both-directions/best-start": 1
+      },
+      "random": {
+        "CW64-PS/minimize-distance": 79,
+        "basic-sweep/both-directions/best-start": 1
+      }
+    },
+    "spatial_family": {
+      "clustered": {
+        "CW64-PS/minimize-distance": 46,
+        "SNN/farthest-seed/both-route-ends": 1,
+        "basic-sweep/both-directions/best-start": 1
+      },
+      "mixed": {
+        "CW64-PS/minimize-distance": 46,
+        "SNN/farthest-seed/both-route-ends": 2
+      },
+      "radial": {
+        "CW64-PS/minimize-distance": 44,
+        "SNN/farthest-seed/both-route-ends": 1,
+        "basic-sweep/both-directions/best-start": 3
+      },
+      "two_clusters": {
+        "CW64-PS/minimize-distance": 46,
+        "SNN/farthest-seed/both-route-ends": 2
+      },
+      "uniform": {
+        "CW64-PS/minimize-distance": 48
+      }
+    }
+  },
+  "label_counts": {
+    "CW64-PS/minimize-distance": 230,
+    "SNN/farthest-seed/both-route-ends": 6,
+    "basic-sweep/both-directions/best-start": 4
+  },
+  "label_percentages": {
+    "CW64-PS/minimize-distance": 0.9583333333333334,
+    "SNN/farthest-seed/both-route-ends": 0.025,
+    "basic-sweep/both-directions/best-start": 0.016666666666666666
+  },
+  "mean_cost_per_solver": {
+    "basic_sweep_both_directions_best_start": 1028.9458333333334,
+    "cw64_ps_minimize_distance": 783.7666666666667,
+    "snn_farthest_seed_both_route_ends": 884.725
+  },
+  "mean_runtime_per_solver": {
+    "basic_sweep_both_directions_best_start": 0.023161557131970767,
+    "cw64_ps_minimize_distance": 0.0029055052170103104,
+    "snn_farthest_seed_both_route_ends": 0.0010991732551095387
+  },
+  "number_of_instances": 240,
+  "solver_gap_summary": {
+    "basic_sweep_both_directions_best_start": {
+      "best_frequency": 0.016666666666666666,
+      "mean_relative_cost_gap": 0.28812576892481734,
+      "median_relative_cost_gap": 0.21148846820423944,
+      "within_1_percent_frequency": 0.025,
+      "within_5_percent_frequency": 0.07083333333333333
+    },
+    "cw64_ps_minimize_distance": {
+      "best_frequency": 0.9583333333333334,
+      "mean_relative_cost_gap": 0.001558635287058658,
+      "median_relative_cost_gap": 0.0,
+      "within_1_percent_frequency": 0.9708333333333333,
+      "within_5_percent_frequency": 0.9833333333333333
+    },
+    "snn_farthest_seed_both_route_ends": {
+      "best_frequency": 0.025,
+      "mean_relative_cost_gap": 0.14417322996764353,
+      "median_relative_cost_gap": 0.13486344001612896,
+      "within_1_percent_frequency": 0.03333333333333333,
+      "within_5_percent_frequency": 0.14166666666666666
+    }
+  },
+  "successful_solver_runs": 720,
+  "valid_experiment_rows": 240
+}

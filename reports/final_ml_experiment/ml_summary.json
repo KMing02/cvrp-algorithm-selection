@@ -1,0 +1,552 @@
+{
+  "best_ml_model": "RandomForest",
+  "development_relabel_summary": {
+    "failed_solver_runs": 0,
+    "failure_count_by_solver": {
+      "be83_rfcs_default": 0,
+      "cmt79_2phase_default": 0,
+      "cw64_ps_minimize_distance_plus_2opt1": 0,
+      "mj76_insertion_all_strain": 0,
+      "wh72_sweep_both_directions": 0
+    },
+    "feature_quality": {
+      "constant_features": [],
+      "non_finite_features": []
+    },
+    "label_breakdowns": {
+      "customer_count": {
+        "20": {
+          "Be83-RFCS/default": 32,
+          "CMT79-2phase/default": 19,
+          "CW64-PS/minimize-distance+2opt1": 26,
+          "MJ76-insertion/all-strain": 15,
+          "WH72-sweep/both-directions": 28
+        },
+        "50": {
+          "Be83-RFCS/default": 26,
+          "CMT79-2phase/default": 9,
+          "CW64-PS/minimize-distance+2opt1": 26,
+          "MJ76-insertion/all-strain": 29,
+          "WH72-sweep/both-directions": 30
+        }
+      },
+      "demand_regime": {
+        "high_pressure": {
+          "Be83-RFCS/default": 7,
+          "CMT79-2phase/default": 3,
+          "CW64-PS/minimize-distance+2opt1": 16,
+          "MJ76-insertion/all-strain": 18,
+          "WH72-sweep/both-directions": 16
+        },
+        "high_variance": {
+          "Be83-RFCS/default": 8,
+          "CMT79-2phase/default": 7,
+          "CW64-PS/minimize-distance+2opt1": 20,
+          "MJ76-insertion/all-strain": 12,
+          "WH72-sweep/both-directions": 13
+        },
+        "low_pressure": {
+          "Be83-RFCS/default": 22,
+          "CMT79-2phase/default": 12,
+          "CW64-PS/minimize-distance+2opt1": 5,
+          "MJ76-insertion/all-strain": 3,
+          "WH72-sweep/both-directions": 18
+        },
+        "low_variance": {
+          "Be83-RFCS/default": 21,
+          "CMT79-2phase/default": 6,
+          "CW64-PS/minimize-distance+2opt1": 11,
+          "MJ76-insertion/all-strain": 11,
+          "WH72-sweep/both-directions": 11
+        }
+      },
+      "depot_position": {
+        "center": {
+          "Be83-RFCS/default": 24,
+          "CMT79-2phase/default": 9,
+          "CW64-PS/minimize-distance+2opt1": 15,
+          "MJ76-insertion/all-strain": 15,
+          "WH72-sweep/both-directions": 17
+        },
+        "corner": {
+          "Be83-RFCS/default": 16,
+          "CMT79-2phase/default": 13,
+          "CW64-PS/minimize-distance+2opt1": 15,
+          "MJ76-insertion/all-strain": 16,
+          "WH72-sweep/both-directions": 20
+        },
+        "random": {
+          "Be83-RFCS/default": 18,
+          "CMT79-2phase/default": 6,
+          "CW64-PS/minimize-distance+2opt1": 22,
+          "MJ76-insertion/all-strain": 13,
+          "WH72-sweep/both-directions": 21
+        }
+      },
+      "spatial_family": {
+        "clustered": {
+          "Be83-RFCS/default": 12,
+          "CMT79-2phase/default": 8,
+          "CW64-PS/minimize-distance+2opt1": 7,
+          "MJ76-insertion/all-strain": 8,
+          "WH72-sweep/both-directions": 13
+        },
+        "mixed": {
+          "Be83-RFCS/default": 10,
+          "CMT79-2phase/default": 3,
+          "CW64-PS/minimize-distance+2opt1": 11,
+          "MJ76-insertion/all-strain": 8,
+          "WH72-sweep/both-directions": 16
+        },
+        "radial": {
+          "Be83-RFCS/default": 11,
+          "CMT79-2phase/default": 7,
+          "CW64-PS/minimize-distance+2opt1": 13,
+          "MJ76-insertion/all-strain": 5,
+          "WH72-sweep/both-directions": 12
+        },
+        "two_clusters": {
+          "Be83-RFCS/default": 6,
+          "CMT79-2phase/default": 8,
+          "CW64-PS/minimize-distance+2opt1": 10,
+          "MJ76-insertion/all-strain": 12,
+          "WH72-sweep/both-directions": 12
+        },
+        "uniform": {
+          "Be83-RFCS/default": 19,
+          "CMT79-2phase/default": 2,
+          "CW64-PS/minimize-distance+2opt1": 11,
+          "MJ76-insertion/all-strain": 11,
+          "WH72-sweep/both-directions": 5
+        }
+      }
+    },
+    "label_counts": {
+      "Be83-RFCS/default": 58,
+      "CMT79-2phase/default": 28,
+      "CW64-PS/minimize-distance+2opt1": 52,
+      "MJ76-insertion/all-strain": 44,
+      "WH72-sweep/both-directions": 58
+    },
+    "label_percentages": {
+      "Be83-RFCS/default": 0.24166666666666667,
+      "CMT79-2phase/default": 0.11666666666666667,
+      "CW64-PS/minimize-distance+2opt1": 0.21666666666666667,
+      "MJ76-insertion/all-strain": 0.18333333333333332,
+      "WH72-sweep/both-directions": 0.24166666666666667
+    },
+    "mean_cost_per_solver": {
+      "be83_rfcs_default": 776.225,
+      "cmt79_2phase_default": 794.4916666666667,
+      "cw64_ps_minimize_distance_plus_2opt1": 782.5791666666667,
+      "mj76_insertion_all_strain": 770.325,
+      "wh72_sweep_both_directions": 775.9583333333334
+    },
+    "mean_runtime_per_solver": {
+      "be83_rfcs_default": 0.1577502944463049,
+      "cmt79_2phase_default": 0.006439822212754128,
+      "cw64_ps_minimize_distance_plus_2opt1": 0.003436801223142538,
+      "mj76_insertion_all_strain": 0.08660014238363753,
+      "wh72_sweep_both_directions": 0.2745814392187943
+    },
+    "number_of_instances": 240,
+    "solver_gap_summary": {
+      "be83_rfcs_default": {
+        "best_frequency": 0.24166666666666667,
+        "mean_relative_cost_gap": 0.02174944641463135,
+        "median_relative_cost_gap": 0.007760048171007075,
+        "within_1_percent_frequency": 0.5416666666666666,
+        "within_5_percent_frequency": 0.875
+      },
+      "cmt79_2phase_default": {
+        "best_frequency": 0.11666666666666667,
+        "mean_relative_cost_gap": 0.04950627420890141,
+        "median_relative_cost_gap": 0.03517994761266802,
+        "within_1_percent_frequency": 0.21666666666666667,
+        "within_5_percent_frequency": 0.5833333333333334
+      },
+      "cw64_ps_minimize_distance_plus_2opt1": {
+        "best_frequency": 0.21666666666666667,
+        "mean_relative_cost_gap": 0.03403654020738897,
+        "median_relative_cost_gap": 0.024306727755003615,
+        "within_1_percent_frequency": 0.325,
+        "within_5_percent_frequency": 0.75
+      },
+      "mj76_insertion_all_strain": {
+        "best_frequency": 0.18333333333333332,
+        "mean_relative_cost_gap": 0.018529108507860312,
+        "median_relative_cost_gap": 0.011555080837015098,
+        "within_1_percent_frequency": 0.4666666666666667,
+        "within_5_percent_frequency": 0.9083333333333333
+      },
+      "wh72_sweep_both_directions": {
+        "best_frequency": 0.24166666666666667,
+        "mean_relative_cost_gap": 0.021207347604970915,
+        "median_relative_cost_gap": 0.008584456820763394,
+        "within_1_percent_frequency": 0.5125,
+        "within_5_percent_frequency": 0.875
+      }
+    },
+    "successful_solver_runs": 1200,
+    "valid_experiment_rows": 240
+  },
+  "experiment_summary": {
+    "elapsed_seconds": 2108.2873125420883,
+    "failed_solver_runs": 1,
+    "failure_count_by_solver": {
+      "be83_rfcs_default": 0,
+      "cmt79_2phase_default": 0,
+      "cw64_ps_minimize_distance_plus_2opt1": 0,
+      "mj76_insertion_all_strain": 0,
+      "wh72_sweep_both_directions": 1
+    },
+    "feature_quality": {
+      "constant_features": [],
+      "non_finite_features": []
+    },
+    "label_breakdowns": {
+      "customer_count": {
+        "100": {
+          "Be83-RFCS/default": 86,
+          "CMT79-2phase/default": 34,
+          "CW64-PS/minimize-distance+2opt1": 158,
+          "MJ76-insertion/all-strain": 90,
+          "WH72-sweep/both-directions": 52
+        },
+        "20": {
+          "Be83-RFCS/default": 123,
+          "CMT79-2phase/default": 55,
+          "CW64-PS/minimize-distance+2opt1": 78,
+          "MJ76-insertion/all-strain": 73,
+          "WH72-sweep/both-directions": 91
+        },
+        "50": {
+          "Be83-RFCS/default": 114,
+          "CMT79-2phase/default": 30,
+          "CW64-PS/minimize-distance+2opt1": 78,
+          "MJ76-insertion/all-strain": 103,
+          "WH72-sweep/both-directions": 95
+        }
+      },
+      "demand_regime": {
+        "high_pressure": {
+          "Be83-RFCS/default": 32,
+          "CMT79-2phase/default": 19,
+          "CW64-PS/minimize-distance+2opt1": 100,
+          "MJ76-insertion/all-strain": 106,
+          "WH72-sweep/both-directions": 58
+        },
+        "high_variance": {
+          "Be83-RFCS/default": 45,
+          "CMT79-2phase/default": 30,
+          "CW64-PS/minimize-distance+2opt1": 120,
+          "MJ76-insertion/all-strain": 82,
+          "WH72-sweep/both-directions": 38
+        },
+        "low_pressure": {
+          "Be83-RFCS/default": 116,
+          "CMT79-2phase/default": 47,
+          "CW64-PS/minimize-distance+2opt1": 34,
+          "MJ76-insertion/all-strain": 22,
+          "WH72-sweep/both-directions": 96
+        },
+        "low_variance": {
+          "Be83-RFCS/default": 130,
+          "CMT79-2phase/default": 23,
+          "CW64-PS/minimize-distance+2opt1": 60,
+          "MJ76-insertion/all-strain": 56,
+          "WH72-sweep/both-directions": 46
+        }
+      },
+      "depot_position": {
+        "center": {
+          "Be83-RFCS/default": 108,
+          "CMT79-2phase/default": 39,
+          "CW64-PS/minimize-distance+2opt1": 103,
+          "MJ76-insertion/all-strain": 66,
+          "WH72-sweep/both-directions": 104
+        },
+        "corner": {
+          "Be83-RFCS/default": 114,
+          "CMT79-2phase/default": 46,
+          "CW64-PS/minimize-distance+2opt1": 97,
+          "MJ76-insertion/all-strain": 116,
+          "WH72-sweep/both-directions": 47
+        },
+        "random": {
+          "Be83-RFCS/default": 101,
+          "CMT79-2phase/default": 34,
+          "CW64-PS/minimize-distance+2opt1": 114,
+          "MJ76-insertion/all-strain": 84,
+          "WH72-sweep/both-directions": 87
+        }
+      },
+      "spatial_family": {
+        "clustered": {
+          "Be83-RFCS/default": 76,
+          "CMT79-2phase/default": 22,
+          "CW64-PS/minimize-distance+2opt1": 53,
+          "MJ76-insertion/all-strain": 62,
+          "WH72-sweep/both-directions": 39
+        },
+        "mixed": {
+          "Be83-RFCS/default": 60,
+          "CMT79-2phase/default": 12,
+          "CW64-PS/minimize-distance+2opt1": 74,
+          "MJ76-insertion/all-strain": 60,
+          "WH72-sweep/both-directions": 46
+        },
+        "radial": {
+          "Be83-RFCS/default": 67,
+          "CMT79-2phase/default": 20,
+          "CW64-PS/minimize-distance+2opt1": 60,
+          "MJ76-insertion/all-strain": 38,
+          "WH72-sweep/both-directions": 67
+        },
+        "two_clusters": {
+          "Be83-RFCS/default": 62,
+          "CMT79-2phase/default": 43,
+          "CW64-PS/minimize-distance+2opt1": 54,
+          "MJ76-insertion/all-strain": 58,
+          "WH72-sweep/both-directions": 35
+        },
+        "uniform": {
+          "Be83-RFCS/default": 58,
+          "CMT79-2phase/default": 22,
+          "CW64-PS/minimize-distance+2opt1": 73,
+          "MJ76-insertion/all-strain": 48,
+          "WH72-sweep/both-directions": 51
+        }
+      }
+    },
+    "label_counts": {
+      "Be83-RFCS/default": 323,
+      "CMT79-2phase/default": 119,
+      "CW64-PS/minimize-distance+2opt1": 314,
+      "MJ76-insertion/all-strain": 266,
+      "WH72-sweep/both-directions": 238
+    },
+    "label_percentages": {
+      "Be83-RFCS/default": 0.2563492063492063,
+      "CMT79-2phase/default": 0.09444444444444444,
+      "CW64-PS/minimize-distance+2opt1": 0.2492063492063492,
+      "MJ76-insertion/all-strain": 0.2111111111111111,
+      "WH72-sweep/both-directions": 0.18888888888888888
+    },
+    "mean_cost_per_solver": {
+      "be83_rfcs_default": 1099.4785714285715,
+      "cmt79_2phase_default": 1109.9333333333334,
+      "cw64_ps_minimize_distance_plus_2opt1": 1092.0206349206348,
+      "mj76_insertion_all_strain": 1085.9174603174604,
+      "wh72_sweep_both_directions": 1117.8538522637014
+    },
+    "mean_runtime_per_solver": {
+      "be83_rfcs_default": 1.1870371335004974,
+      "cmt79_2phase_default": 0.009948920845589963,
+      "cw64_ps_minimize_distance_plus_2opt1": 0.007230581878961632,
+      "mj76_insertion_all_strain": 0.19195345108728074,
+      "wh72_sweep_both_directions": 0.25948885719057185
+    },
+    "number_of_instances": 1260,
+    "solver_gap_summary": {
+      "be83_rfcs_default": {
+        "best_frequency": 0.2563492063492063,
+        "mean_relative_cost_gap": 0.02218235327702439,
+        "median_relative_cost_gap": 0.0105780143544494,
+        "within_1_percent_frequency": 0.4936507936507937,
+        "within_5_percent_frequency": 0.8571428571428571
+      },
+      "cmt79_2phase_default": {
+        "best_frequency": 0.09444444444444444,
+        "mean_relative_cost_gap": 0.04209086855870628,
+        "median_relative_cost_gap": 0.029423155784389664,
+        "within_1_percent_frequency": 0.23492063492063492,
+        "within_5_percent_frequency": 0.7031746031746032
+      },
+      "cw64_ps_minimize_distance_plus_2opt1": {
+        "best_frequency": 0.2492063492063492,
+        "mean_relative_cost_gap": 0.025217362813128804,
+        "median_relative_cost_gap": 0.01624247961506492,
+        "within_1_percent_frequency": 0.4015873015873016,
+        "within_5_percent_frequency": 0.8404761904761905
+      },
+      "mj76_insertion_all_strain": {
+        "best_frequency": 0.2111111111111111,
+        "mean_relative_cost_gap": 0.016624972893289337,
+        "median_relative_cost_gap": 0.01046108672988023,
+        "within_1_percent_frequency": 0.49047619047619045,
+        "within_5_percent_frequency": 0.9277777777777778
+      },
+      "wh72_sweep_both_directions": {
+        "best_frequency": 0.18888888888888888,
+        "mean_relative_cost_gap": 0.03318202105822546,
+        "median_relative_cost_gap": 0.017848528702363725,
+        "within_1_percent_frequency": 0.41349206349206347,
+        "within_5_percent_frequency": 0.7666666666666667
+      }
+    },
+    "successful_solver_runs": 6299,
+    "valid_experiment_rows": 1260
+  },
+  "feature_columns": [
+    "bounding_box_area",
+    "capacity",
+    "capacity_pressure",
+    "cluster_separation_estimate",
+    "coordinate_height",
+    "coordinate_width",
+    "customer_density",
+    "demand_cv",
+    "demand_max",
+    "demand_mean",
+    "demand_min",
+    "demand_q10",
+    "demand_q25",
+    "demand_q50",
+    "demand_q75",
+    "demand_q90",
+    "demand_std",
+    "depot_centrality_normalized",
+    "depot_distance_max",
+    "depot_distance_mean",
+    "depot_distance_min",
+    "depot_distance_std",
+    "depot_to_centroid_distance",
+    "mean_customers_per_min_vehicle",
+    "mean_distance_to_3_centers",
+    "mean_nearest_neighbor_distance",
+    "mean_pairwise_customer_distance",
+    "min_vehicles_lb",
+    "n_customers",
+    "nn_to_pairwise_ratio",
+    "ring_1_ratio",
+    "ring_2_ratio",
+    "ring_3_ratio",
+    "ring_4_ratio",
+    "ring_5_ratio",
+    "std_nearest_neighbor_distance",
+    "std_pairwise_customer_distance",
+    "total_demand"
+  ],
+  "feature_importance": {
+    "permutation_top10": [
+      {
+        "feature": "depot_centrality_normalized",
+        "importance_mean": 0.01349206349206351,
+        "importance_std": 0.004761904761904761
+      },
+      {
+        "feature": "ring_3_ratio",
+        "importance_mean": 0.011904761904761928,
+        "importance_std": 0.009720197391996746
+      },
+      {
+        "feature": "depot_distance_std",
+        "importance_mean": 0.011111111111111127,
+        "importance_std": 0.0080936817676076
+      },
+      {
+        "feature": "ring_4_ratio",
+        "importance_mean": 0.010317460317460336,
+        "importance_std": 0.004046840883803783
+      },
+      {
+        "feature": "std_pairwise_customer_distance",
+        "importance_mean": 0.009523809523809535,
+        "importance_std": 0.005939138709164983
+      },
+      {
+        "feature": "depot_distance_min",
+        "importance_mean": 0.008730158730158755,
+        "importance_std": 0.0080936817676076
+      },
+      {
+        "feature": "total_demand",
+        "importance_mean": 0.006349206349206371,
+        "importance_std": 0.009589719026662363
+      },
+      {
+        "feature": "capacity_pressure",
+        "importance_mean": 0.0047619047619048005,
+        "importance_std": 0.008837721210841308
+      },
+      {
+        "feature": "mean_nearest_neighbor_distance",
+        "importance_mean": 0.004761904761904789,
+        "importance_std": 0.0029695693545825005
+      },
+      {
+        "feature": "demand_min",
+        "importance_mean": 0.003968253968253987,
+        "importance_std": 0.004347004424644181
+      }
+    ],
+    "random_forest_top10": [
+      {
+        "feature": "capacity_pressure",
+        "importance": 0.04388199770564182
+      },
+      {
+        "feature": "demand_std",
+        "importance": 0.04186120686689569
+      },
+      {
+        "feature": "depot_distance_std",
+        "importance": 0.04077140637493325
+      },
+      {
+        "feature": "depot_centrality_normalized",
+        "importance": 0.0401950380823175
+      },
+      {
+        "feature": "total_demand",
+        "importance": 0.03958736412054015
+      },
+      {
+        "feature": "depot_to_centroid_distance",
+        "importance": 0.036749126952484626
+      },
+      {
+        "feature": "demand_mean",
+        "importance": 0.035753102245201895
+      },
+      {
+        "feature": "depot_distance_mean",
+        "importance": 0.034159539502604315
+      },
+      {
+        "feature": "demand_cv",
+        "importance": 0.032621325456357424
+      },
+      {
+        "feature": "depot_distance_max",
+        "importance": 0.03181352970565786
+      }
+    ]
+  },
+  "label_counts": {
+    "Be83-RFCS/default": 323,
+    "CMT79-2phase/default": 119,
+    "CW64-PS/minimize-distance+2opt1": 314,
+    "MJ76-insertion/all-strain": 266,
+    "WH72-sweep/both-directions": 238
+  },
+  "label_percentages": {
+    "Be83-RFCS/default": 0.2563492063492063,
+    "CMT79-2phase/default": 0.09444444444444444,
+    "CW64-PS/minimize-distance+2opt1": 0.2492063492063492,
+    "MJ76-insertion/all-strain": 0.2111111111111111,
+    "WH72-sweep/both-directions": 0.18888888888888888
+  },
+  "n_rows": 1260,
+  "sbs_solver": "MJ76-insertion/all-strain",
+  "solver_failure_counts": {
+    "Be83-RFCS/default": 0,
+    "CMT79-2phase/default": 0,
+    "CW64-PS/minimize-distance+2opt1": 0,
+    "MJ76-insertion/all-strain": 0,
+    "WH72-sweep/both-directions": 1
+  },
+  "test_rows": 252,
+  "train_rows": 1008
+}

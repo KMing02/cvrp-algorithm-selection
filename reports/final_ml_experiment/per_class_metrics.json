@@ -1,0 +1,258 @@
+{
+  "DecisionTree": {
+    "Be83-RFCS/default": {
+      "f1": 0.35294117647058826,
+      "precision": 0.3380281690140845,
+      "recall": 0.36923076923076925,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.10256410256410256,
+      "precision": 0.13333333333333333,
+      "recall": 0.08333333333333333,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.3916083916083916,
+      "precision": 0.35,
+      "recall": 0.4444444444444444,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.29473684210526313,
+      "precision": 0.3333333333333333,
+      "recall": 0.2641509433962264,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.2857142857142857,
+      "precision": 0.29545454545454547,
+      "recall": 0.2765957446808511,
+      "support": 47
+    }
+  },
+  "Dummy-most-frequent": {
+    "Be83-RFCS/default": {
+      "f1": 0.41009463722397477,
+      "precision": 0.25793650793650796,
+      "recall": 1.0,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 47
+    }
+  },
+  "Dummy-stratified": {
+    "Be83-RFCS/default": {
+      "f1": 0.35384615384615387,
+      "precision": 0.35384615384615387,
+      "recall": 0.35384615384615387,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.04081632653061224,
+      "precision": 0.04,
+      "recall": 0.041666666666666664,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.2975206611570248,
+      "precision": 0.3103448275862069,
+      "recall": 0.2857142857142857,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.15384615384615385,
+      "precision": 0.140625,
+      "recall": 0.16981132075471697,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.1839080459770115,
+      "precision": 0.2,
+      "recall": 0.1702127659574468,
+      "support": 47
+    }
+  },
+  "GradientBoosting": {
+    "Be83-RFCS/default": {
+      "f1": 0.42028985507246375,
+      "precision": 0.3972602739726027,
+      "recall": 0.4461538461538462,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.06451612903225806,
+      "precision": 0.14285714285714285,
+      "recall": 0.041666666666666664,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.40310077519379844,
+      "precision": 0.3939393939393939,
+      "recall": 0.4126984126984127,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.2549019607843137,
+      "precision": 0.2653061224489796,
+      "recall": 0.24528301886792453,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.34615384615384615,
+      "precision": 0.3157894736842105,
+      "recall": 0.3829787234042553,
+      "support": 47
+    }
+  },
+  "KNN": {
+    "Be83-RFCS/default": {
+      "f1": 0.4166666666666667,
+      "precision": 0.379746835443038,
+      "recall": 0.46153846153846156,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.2,
+      "precision": 0.25,
+      "recall": 0.16666666666666666,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.432,
+      "precision": 0.43548387096774194,
+      "recall": 0.42857142857142855,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.2823529411764706,
+      "precision": 0.375,
+      "recall": 0.22641509433962265,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.43636363636363634,
+      "precision": 0.38095238095238093,
+      "recall": 0.5106382978723404,
+      "support": 47
+    }
+  },
+  "RandomForest": {
+    "Be83-RFCS/default": {
+      "f1": 0.4666666666666667,
+      "precision": 0.4117647058823529,
+      "recall": 0.5384615384615384,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.3076923076923077,
+      "precision": 0.4,
+      "recall": 0.25,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.4426229508196721,
+      "precision": 0.4576271186440678,
+      "recall": 0.42857142857142855,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.2391304347826087,
+      "precision": 0.28205128205128205,
+      "recall": 0.20754716981132076,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.43564356435643564,
+      "precision": 0.4074074074074074,
+      "recall": 0.46808510638297873,
+      "support": 47
+    }
+  },
+  "SBS": {
+    "Be83-RFCS/default": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 0.3475409836065574,
+      "precision": 0.21031746031746032,
+      "recall": 1.0,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 47
+    }
+  },
+  "VBS": {
+    "Be83-RFCS/default": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 65
+    },
+    "CMT79-2phase/default": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 24
+    },
+    "CW64-PS/minimize-distance+2opt1": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 63
+    },
+    "MJ76-insertion/all-strain": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 53
+    },
+    "WH72-sweep/both-directions": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 47
+    }
+  }
+}

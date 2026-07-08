@@ -1,0 +1,93 @@
+{
+  "DecisionTree": {
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 8,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 5,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "random_state": 20260708,
+    "splitter": "best"
+  },
+  "Dummy-most-frequent": {
+    "constant": null,
+    "random_state": 20260708,
+    "strategy": "most_frequent"
+  },
+  "Dummy-stratified": {
+    "constant": null,
+    "random_state": 20260708,
+    "strategy": "stratified"
+  },
+  "GradientBoosting": {
+    "ccp_alpha": 0.0,
+    "criterion": "friedman_mse",
+    "init": null,
+    "learning_rate": 0.05,
+    "loss": "log_loss",
+    "max_depth": 3,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "n_estimators": 150,
+    "n_iter_no_change": null,
+    "random_state": 20260708,
+    "subsample": 1.0,
+    "tol": 0.0001,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "KNN": {
+    "memory": null,
+    "model__algorithm": "auto",
+    "model__leaf_size": 30,
+    "model__metric": "minkowski",
+    "model__metric_params": null,
+    "model__n_jobs": null,
+    "model__n_neighbors": 7,
+    "model__p": 2,
+    "model__weights": "distance",
+    "scaler__copy": true,
+    "scaler__with_mean": true,
+    "scaler__with_std": true,
+    "transform_input": null,
+    "verbose": false
+  },
+  "RandomForest": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": "balanced",
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 250,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 20260708,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "SBS": {
+    "definition": "lowest mean cost ratio to VBS on training data",
+    "solver": "MJ76-insertion/all-strain"
+  },
+  "VBS": {
+    "definition": "oracle minimum feasible cost per test instance"
+  }
+}

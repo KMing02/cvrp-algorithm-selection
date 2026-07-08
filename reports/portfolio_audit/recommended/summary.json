@@ -1,0 +1,204 @@
+{
+  "failed_solver_runs": 0,
+  "failure_count_by_solver": {
+    "be83_rfcs_default": 0,
+    "cmt79_2phase_default": 0,
+    "cw64_ps_minimize_distance_plus_2opt1": 0,
+    "gaskell_ps_both_savings": 0,
+    "mj76_insertion_all_strain": 0,
+    "ty68_nn_default": 0
+  },
+  "feature_quality": {
+    "constant_features": [],
+    "non_finite_features": []
+  },
+  "label_breakdowns": {
+    "customer_count": {
+      "20": {
+        "Be83-RFCS/default": 44,
+        "CMT79-2phase/default": 23,
+        "CW64-PS/minimize-distance+2opt1": 27,
+        "Gaskell-PS/both-savings": 2,
+        "MJ76-insertion/all-strain": 22,
+        "Ty68-NN/default": 2
+      },
+      "50": {
+        "Be83-RFCS/default": 40,
+        "CMT79-2phase/default": 13,
+        "CW64-PS/minimize-distance+2opt1": 26,
+        "Gaskell-PS/both-savings": 3,
+        "MJ76-insertion/all-strain": 38
+      }
+    },
+    "demand_regime": {
+      "high_pressure": {
+        "Be83-RFCS/default": 12,
+        "CMT79-2phase/default": 5,
+        "CW64-PS/minimize-distance+2opt1": 16,
+        "Gaskell-PS/both-savings": 1,
+        "MJ76-insertion/all-strain": 24,
+        "Ty68-NN/default": 2
+      },
+      "high_variance": {
+        "Be83-RFCS/default": 14,
+        "CMT79-2phase/default": 9,
+        "CW64-PS/minimize-distance+2opt1": 21,
+        "Gaskell-PS/both-savings": 1,
+        "MJ76-insertion/all-strain": 15
+      },
+      "low_pressure": {
+        "Be83-RFCS/default": 34,
+        "CMT79-2phase/default": 14,
+        "CW64-PS/minimize-distance+2opt1": 5,
+        "MJ76-insertion/all-strain": 7
+      },
+      "low_variance": {
+        "Be83-RFCS/default": 24,
+        "CMT79-2phase/default": 8,
+        "CW64-PS/minimize-distance+2opt1": 11,
+        "Gaskell-PS/both-savings": 3,
+        "MJ76-insertion/all-strain": 14
+      }
+    },
+    "depot_position": {
+      "center": {
+        "Be83-RFCS/default": 36,
+        "CMT79-2phase/default": 10,
+        "CW64-PS/minimize-distance+2opt1": 18,
+        "Gaskell-PS/both-savings": 2,
+        "MJ76-insertion/all-strain": 14
+      },
+      "corner": {
+        "Be83-RFCS/default": 22,
+        "CMT79-2phase/default": 15,
+        "CW64-PS/minimize-distance+2opt1": 13,
+        "Gaskell-PS/both-savings": 3,
+        "MJ76-insertion/all-strain": 26,
+        "Ty68-NN/default": 1
+      },
+      "random": {
+        "Be83-RFCS/default": 26,
+        "CMT79-2phase/default": 11,
+        "CW64-PS/minimize-distance+2opt1": 22,
+        "MJ76-insertion/all-strain": 20,
+        "Ty68-NN/default": 1
+      }
+    },
+    "spatial_family": {
+      "clustered": {
+        "Be83-RFCS/default": 16,
+        "CMT79-2phase/default": 9,
+        "CW64-PS/minimize-distance+2opt1": 8,
+        "MJ76-insertion/all-strain": 15
+      },
+      "mixed": {
+        "Be83-RFCS/default": 16,
+        "CMT79-2phase/default": 8,
+        "CW64-PS/minimize-distance+2opt1": 10,
+        "Gaskell-PS/both-savings": 1,
+        "MJ76-insertion/all-strain": 12,
+        "Ty68-NN/default": 1
+      },
+      "radial": {
+        "Be83-RFCS/default": 16,
+        "CMT79-2phase/default": 7,
+        "CW64-PS/minimize-distance+2opt1": 13,
+        "Gaskell-PS/both-savings": 3,
+        "MJ76-insertion/all-strain": 9
+      },
+      "two_clusters": {
+        "Be83-RFCS/default": 13,
+        "CMT79-2phase/default": 10,
+        "CW64-PS/minimize-distance+2opt1": 11,
+        "MJ76-insertion/all-strain": 13,
+        "Ty68-NN/default": 1
+      },
+      "uniform": {
+        "Be83-RFCS/default": 23,
+        "CMT79-2phase/default": 2,
+        "CW64-PS/minimize-distance+2opt1": 11,
+        "Gaskell-PS/both-savings": 1,
+        "MJ76-insertion/all-strain": 11
+      }
+    }
+  },
+  "label_counts": {
+    "Be83-RFCS/default": 84,
+    "CMT79-2phase/default": 36,
+    "CW64-PS/minimize-distance+2opt1": 53,
+    "Gaskell-PS/both-savings": 5,
+    "MJ76-insertion/all-strain": 60,
+    "Ty68-NN/default": 2
+  },
+  "label_percentages": {
+    "Be83-RFCS/default": 0.35,
+    "CMT79-2phase/default": 0.15,
+    "CW64-PS/minimize-distance+2opt1": 0.22083333333333333,
+    "Gaskell-PS/both-savings": 0.020833333333333332,
+    "MJ76-insertion/all-strain": 0.25,
+    "Ty68-NN/default": 0.008333333333333333
+  },
+  "mean_cost_per_solver": {
+    "be83_rfcs_default": 776.225,
+    "cmt79_2phase_default": 794.4916666666667,
+    "cw64_ps_minimize_distance_plus_2opt1": 782.5791666666667,
+    "gaskell_ps_both_savings": 793.8166666666667,
+    "mj76_insertion_all_strain": 769.4625,
+    "ty68_nn_default": 886.9541666666667
+  },
+  "mean_runtime_per_solver": {
+    "be83_rfcs_default": 0.15632953785485976,
+    "cmt79_2phase_default": 0.006266342213590784,
+    "cw64_ps_minimize_distance_plus_2opt1": 0.0032769166675279847,
+    "gaskell_ps_both_savings": 0.005733063371735625,
+    "mj76_insertion_all_strain": 0.08372044980157321,
+    "ty68_nn_default": 0.01192889286709639
+  },
+  "number_of_instances": 240,
+  "solver_gap_summary": {
+    "be83_rfcs_default": {
+      "best_frequency": 0.35,
+      "mean_relative_cost_gap": 0.018736583880424998,
+      "median_relative_cost_gap": 0.0033521999865238194,
+      "within_1_percent_frequency": 0.625,
+      "within_5_percent_frequency": 0.8916666666666667
+    },
+    "cmt79_2phase_default": {
+      "best_frequency": 0.15,
+      "mean_relative_cost_gap": 0.04634905720518065,
+      "median_relative_cost_gap": 0.030707819964797586,
+      "within_1_percent_frequency": 0.24166666666666667,
+      "within_5_percent_frequency": 0.6125
+    },
+    "cw64_ps_minimize_distance_plus_2opt1": {
+      "best_frequency": 0.22083333333333333,
+      "mean_relative_cost_gap": 0.03095189315398979,
+      "median_relative_cost_gap": 0.020859440267335,
+      "within_1_percent_frequency": 0.3541666666666667,
+      "within_5_percent_frequency": 0.7916666666666666
+    },
+    "gaskell_ps_both_savings": {
+      "best_frequency": 0.020833333333333332,
+      "mean_relative_cost_gap": 0.0460923889691325,
+      "median_relative_cost_gap": 0.03787069835261542,
+      "within_1_percent_frequency": 0.10833333333333334,
+      "within_5_percent_frequency": 0.6541666666666667
+    },
+    "mj76_insertion_all_strain": {
+      "best_frequency": 0.25,
+      "mean_relative_cost_gap": 0.015026284891035725,
+      "median_relative_cost_gap": 0.005991461270763821,
+      "within_1_percent_frequency": 0.5666666666666667,
+      "within_5_percent_frequency": 0.9208333333333333
+    },
+    "ty68_nn_default": {
+      "best_frequency": 0.008333333333333333,
+      "mean_relative_cost_gap": 0.1833851657625836,
+      "median_relative_cost_gap": 0.17121398233310825,
+      "within_1_percent_frequency": 0.0125,
+      "within_5_percent_frequency": 0.06666666666666667
+    }
+  },
+  "successful_solver_runs": 1440,
+  "valid_experiment_rows": 240
+}

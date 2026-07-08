@@ -1,0 +1,1226 @@
+[
+  {
+    "a_avg_relative_improvement_when_beats": 0.07633212037443313,
+    "a_beats_b": 196,
+    "b_avg_relative_improvement_when_beats": 0.02001991720573213,
+    "b_beats_a": 28,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "CW64-SS/farthest-seed",
+    "ties": 16
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13363874348040974,
+    "a_beats_b": 235,
+    "b_avg_relative_improvement_when_beats": 0.030506690592864105,
+    "b_beats_a": 5,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "CW64-SS/closest-seed",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.030326249108478264,
+    "a_beats_b": 165,
+    "b_avg_relative_improvement_when_beats": 0.02876723937971619,
+    "b_beats_a": 71,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "Gaskell-PS/both-savings",
+    "ties": 4
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.20546820069212804,
+    "a_beats_b": 235,
+    "b_avg_relative_improvement_when_beats": 0.026062635347076462,
+    "b_beats_a": 5,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "basic-sweep/both-directions/best-start",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.06988983957776879,
+    "a_beats_b": 135,
+    "b_avg_relative_improvement_when_beats": 0.03494387333133373,
+    "b_beats_a": 101,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "GM74-sweep/both-directions",
+    "ties": 4
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.030513119014515717,
+    "a_beats_b": 79,
+    "b_avg_relative_improvement_when_beats": 0.037695323922771806,
+    "b_beats_a": 152,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "WH72-sweep/both-directions",
+    "ties": 9
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.23863324965528887,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.08799171842650104,
+    "b_beats_a": 1,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.02342489216029739,
+    "a_beats_b": 57,
+    "b_avg_relative_improvement_when_beats": 0.030676182260338074,
+    "b_beats_a": 170,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 13
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.04519006799069389,
+    "a_beats_b": 134,
+    "b_avg_relative_improvement_when_beats": 0.03216956933256984,
+    "b_beats_a": 99,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 7
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03145030520944046,
+    "a_beats_b": 73,
+    "b_avg_relative_improvement_when_beats": 0.03429388811048764,
+    "b_beats_a": 161,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 6
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.12806546565139437,
+    "a_beats_b": 230,
+    "b_avg_relative_improvement_when_beats": 0.025473433454493204,
+    "b_beats_a": 10,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "Ty68-NN/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.12424422804619237,
+    "a_beats_b": 233,
+    "b_avg_relative_improvement_when_beats": 0.0385111707781113,
+    "b_beats_a": 7,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.10356313699338784,
+    "a_beats_b": 235,
+    "b_avg_relative_improvement_when_beats": 0.02594708200763284,
+    "b_beats_a": 3,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.0037569701649231724,
+    "b_beats_a": 123,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 117
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1969576287336338,
+    "a_beats_b": 230,
+    "b_avg_relative_improvement_when_beats": 0.027552840517713256,
+    "b_beats_a": 9,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.23017066839391767,
+    "a_beats_b": 238,
+    "b_avg_relative_improvement_when_beats": 0.05608923746359266,
+    "b_beats_a": 2,
+    "solver_a": "CW64-PS/minimize-distance",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.09910596820898362,
+    "a_beats_b": 197,
+    "b_avg_relative_improvement_when_beats": 0.05332484445289768,
+    "b_beats_a": 40,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "CW64-SS/closest-seed",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03337930814599563,
+    "a_beats_b": 60,
+    "b_avg_relative_improvement_when_beats": 0.07688209030236774,
+    "b_beats_a": 176,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "Gaskell-PS/both-savings",
+    "ties": 4
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.18302325141474807,
+    "a_beats_b": 202,
+    "b_avg_relative_improvement_when_beats": 0.0547807134733475,
+    "b_beats_a": 37,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "basic-sweep/both-directions/best-start",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.07226849685406221,
+    "a_beats_b": 78,
+    "b_avg_relative_improvement_when_beats": 0.08736752528226424,
+    "b_beats_a": 161,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "GM74-sweep/both-directions",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03594346912912875,
+    "a_beats_b": 32,
+    "b_avg_relative_improvement_when_beats": 0.09082345466513342,
+    "b_beats_a": 205,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "WH72-sweep/both-directions",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.19015513794454722,
+    "a_beats_b": 238,
+    "b_avg_relative_improvement_when_beats": 0.05153896266152638,
+    "b_beats_a": 2,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0026041666666666665,
+    "a_beats_b": 1,
+    "b_avg_relative_improvement_when_beats": 0.07794009172030694,
+    "b_beats_a": 233,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 6
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.042755962220369544,
+    "a_beats_b": 50,
+    "b_avg_relative_improvement_when_beats": 0.07299257834686355,
+    "b_beats_a": 187,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.04484872815050226,
+    "a_beats_b": 27,
+    "b_avg_relative_improvement_when_beats": 0.08828855396421491,
+    "b_beats_a": 211,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.09587888461622361,
+    "a_beats_b": 186,
+    "b_avg_relative_improvement_when_beats": 0.04640308545825542,
+    "b_beats_a": 53,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "Ty68-NN/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.09574810047718949,
+    "a_beats_b": 186,
+    "b_avg_relative_improvement_when_beats": 0.06123792600388694,
+    "b_beats_a": 52,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.07343850225997042,
+    "a_beats_b": 184,
+    "b_avg_relative_improvement_when_beats": 0.058931332439651214,
+    "b_beats_a": 56,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.02349077028244749,
+    "a_beats_b": 22,
+    "b_avg_relative_improvement_when_beats": 0.0748542106240451,
+    "b_beats_a": 205,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 13
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1788109717185563,
+    "a_beats_b": 193,
+    "b_avg_relative_improvement_when_beats": 0.05914950122526637,
+    "b_beats_a": 47,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.18005613481280164,
+    "a_beats_b": 238,
+    "b_avg_relative_improvement_when_beats": 0.06400371242949954,
+    "b_beats_a": 2,
+    "solver_a": "CW64-SS/farthest-seed",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.02851129975027959,
+    "a_beats_b": 13,
+    "b_avg_relative_improvement_when_beats": 0.12745171340101227,
+    "b_beats_a": 227,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "Gaskell-PS/both-savings",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1456992067565507,
+    "a_beats_b": 170,
+    "b_avg_relative_improvement_when_beats": 0.08017627980929241,
+    "b_beats_a": 68,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "basic-sweep/both-directions/best-start",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03425191168285936,
+    "a_beats_b": 13,
+    "b_avg_relative_improvement_when_beats": 0.11442082809379556,
+    "b_beats_a": 227,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "GM74-sweep/both-directions",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.025297619047619048,
+    "a_beats_b": 1,
+    "b_avg_relative_improvement_when_beats": 0.14332447248553262,
+    "b_beats_a": 239,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "WH72-sweep/both-directions",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.15245958932159578,
+    "a_beats_b": 206,
+    "b_avg_relative_improvement_when_beats": 0.0801413885449675,
+    "b_beats_a": 32,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.14480553827539785,
+    "b_beats_a": 240,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.026907242804283544,
+    "a_beats_b": 14,
+    "b_avg_relative_improvement_when_beats": 0.12854137128711898,
+    "b_beats_a": 225,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.04431703828566897,
+    "a_beats_b": 3,
+    "b_avg_relative_improvement_when_beats": 0.14461671944142554,
+    "b_beats_a": 237,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.06768852567244689,
+    "a_beats_b": 103,
+    "b_avg_relative_improvement_when_beats": 0.06694584452029674,
+    "b_beats_a": 136,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "Ty68-NN/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.06344966096614786,
+    "a_beats_b": 105,
+    "b_avg_relative_improvement_when_beats": 0.06998134300052473,
+    "b_beats_a": 135,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.05806811112474072,
+    "a_beats_b": 82,
+    "b_avg_relative_improvement_when_beats": 0.07869475623015686,
+    "b_beats_a": 155,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.029805818356952708,
+    "a_beats_b": 5,
+    "b_avg_relative_improvement_when_beats": 0.13533200583879315,
+    "b_beats_a": 235,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1395662895048942,
+    "a_beats_b": 162,
+    "b_avg_relative_improvement_when_beats": 0.08516307878869524,
+    "b_beats_a": 78,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.14228360499851897,
+    "a_beats_b": 205,
+    "b_avg_relative_improvement_when_beats": 0.08189944264376935,
+    "b_beats_a": 35,
+    "solver_a": "CW64-SS/closest-seed",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1956263361327527,
+    "a_beats_b": 235,
+    "b_avg_relative_improvement_when_beats": 0.021489802308743332,
+    "b_beats_a": 5,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "basic-sweep/both-directions/best-start",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.06269126915354133,
+    "a_beats_b": 118,
+    "b_avg_relative_improvement_when_beats": 0.03749386974629561,
+    "b_beats_a": 116,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "GM74-sweep/both-directions",
+    "ties": 6
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.02572866057311547,
+    "a_beats_b": 53,
+    "b_avg_relative_improvement_when_beats": 0.0411603560627405,
+    "b_beats_a": 185,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "WH72-sweep/both-directions",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.22831109037431158,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.001388888888888889,
+    "b_beats_a": 1,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.01806316248817694,
+    "a_beats_b": 39,
+    "b_avg_relative_improvement_when_beats": 0.03784955135512691,
+    "b_beats_a": 199,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.041523735894040265,
+    "a_beats_b": 102,
+    "b_avg_relative_improvement_when_beats": 0.03170810063083853,
+    "b_beats_a": 135,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.029440506238222915,
+    "a_beats_b": 44,
+    "b_avg_relative_improvement_when_beats": 0.03864295213879263,
+    "b_beats_a": 193,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.12179504582929293,
+    "a_beats_b": 222,
+    "b_avg_relative_improvement_when_beats": 0.030919844032372513,
+    "b_beats_a": 17,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "Ty68-NN/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11472083059529799,
+    "a_beats_b": 229,
+    "b_avg_relative_improvement_when_beats": 0.029956424950867522,
+    "b_beats_a": 10,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.09880384431741317,
+    "a_beats_b": 221,
+    "b_avg_relative_improvement_when_beats": 0.018505412705572735,
+    "b_beats_a": 18,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.029869466515645905,
+    "a_beats_b": 65,
+    "b_avg_relative_improvement_when_beats": 0.03148964256661058,
+    "b_beats_a": 170,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 5
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.18671602205615023,
+    "a_beats_b": 230,
+    "b_avg_relative_improvement_when_beats": 0.023296053594918938,
+    "b_beats_a": 10,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.21962161986741324,
+    "a_beats_b": 238,
+    "b_avg_relative_improvement_when_beats": 0.018055555555555554,
+    "b_beats_a": 1,
+    "solver_a": "Gaskell-PS/both-savings",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.18166828223424955,
+    "b_beats_a": 240,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "GM74-sweep/both-directions",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.21377875173523034,
+    "b_beats_a": 240,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "WH72-sweep/both-directions",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.12788016579456898,
+    "a_beats_b": 160,
+    "b_avg_relative_improvement_when_beats": 0.14327882271630468,
+    "b_beats_a": 80,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.01610305958132045,
+    "a_beats_b": 1,
+    "b_avg_relative_improvement_when_beats": 0.21475094812500203,
+    "b_beats_a": 239,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.02699569831240362,
+    "a_beats_b": 9,
+    "b_avg_relative_improvement_when_beats": 0.19900364579793334,
+    "b_beats_a": 230,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.21181263610036277,
+    "b_beats_a": 240,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0856849500537246,
+    "a_beats_b": 70,
+    "b_avg_relative_improvement_when_beats": 0.15868409750574586,
+    "b_beats_a": 170,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "Ty68-NN/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.08061451841469913,
+    "a_beats_b": 65,
+    "b_avg_relative_improvement_when_beats": 0.15654523463629938,
+    "b_beats_a": 172,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.059427597963085436,
+    "a_beats_b": 51,
+    "b_avg_relative_improvement_when_beats": 0.15738304772736392,
+    "b_beats_a": 186,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.040972767529934576,
+    "a_beats_b": 3,
+    "b_avg_relative_improvement_when_beats": 0.20609118502397367,
+    "b_beats_a": 236,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.01585279578804931,
+    "b_beats_a": 239,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.12364529238763751,
+    "a_beats_b": 150,
+    "b_avg_relative_improvement_when_beats": 0.13623660996852077,
+    "b_beats_a": 89,
+    "solver_a": "basic-sweep/both-directions/best-start",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.022703516472100567,
+    "a_beats_b": 17,
+    "b_avg_relative_improvement_when_beats": 0.05473054941807298,
+    "b_beats_a": 176,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "WH72-sweep/both-directions",
+    "ties": 47
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.2296185828773838,
+    "a_beats_b": 228,
+    "b_avg_relative_improvement_when_beats": 0.09065143570982354,
+    "b_beats_a": 12,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.02238533788908067,
+    "a_beats_b": 61,
+    "b_avg_relative_improvement_when_beats": 0.06871031082866733,
+    "b_beats_a": 161,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 18
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.04364715253698292,
+    "a_beats_b": 111,
+    "b_avg_relative_improvement_when_beats": 0.06608826329615577,
+    "b_beats_a": 119,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 10
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.024563186253760475,
+    "a_beats_b": 37,
+    "b_avg_relative_improvement_when_beats": 0.057052295290434436,
+    "b_beats_a": 177,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 26
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11989093101821076,
+    "a_beats_b": 209,
+    "b_avg_relative_improvement_when_beats": 0.057390674221458035,
+    "b_beats_a": 31,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "Ty68-NN/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11515691476170173,
+    "a_beats_b": 214,
+    "b_avg_relative_improvement_when_beats": 0.0751729030569019,
+    "b_beats_a": 25,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.10445657329033119,
+    "a_beats_b": 198,
+    "b_avg_relative_improvement_when_beats": 0.05937851423109166,
+    "b_beats_a": 42,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.034390016566298635,
+    "a_beats_b": 96,
+    "b_avg_relative_improvement_when_beats": 0.07043532284235993,
+    "b_beats_a": 137,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 7
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1692712608395221,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.0,
+    "b_beats_a": 0,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.2220712760038593,
+    "a_beats_b": 226,
+    "b_avg_relative_improvement_when_beats": 0.0874994804659568,
+    "b_beats_a": 14,
+    "solver_a": "GM74-sweep/both-directions",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.24893515067045777,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.04030501089324619,
+    "b_beats_a": 1,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "cheapest-insertion/sequential-farthest",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.026813261797105144,
+    "a_beats_b": 109,
+    "b_avg_relative_improvement_when_beats": 0.03300444808646806,
+    "b_beats_a": 105,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 26
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.04815400387720271,
+    "a_beats_b": 166,
+    "b_avg_relative_improvement_when_beats": 0.03250289134906339,
+    "b_beats_a": 56,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 18
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.029664187634331495,
+    "a_beats_b": 106,
+    "b_avg_relative_improvement_when_beats": 0.030685280218798922,
+    "b_beats_a": 99,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 35
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13802180895906843,
+    "a_beats_b": 234,
+    "b_avg_relative_improvement_when_beats": 0.038673665949838516,
+    "b_beats_a": 5,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "Ty68-NN/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13577476958173706,
+    "a_beats_b": 234,
+    "b_avg_relative_improvement_when_beats": 0.029011719238220796,
+    "b_beats_a": 6,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11867255582674198,
+    "a_beats_b": 231,
+    "b_avg_relative_improvement_when_beats": 0.024455096024284306,
+    "b_beats_a": 8,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03721208987473428,
+    "a_beats_b": 145,
+    "b_avg_relative_improvement_when_beats": 0.03158692693935261,
+    "b_beats_a": 80,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 15
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.20192904771240813,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.020588235294117647,
+    "b_beats_a": 1,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.23968763760006753,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.06427015250544663,
+    "b_beats_a": 1,
+    "solver_a": "WH72-sweep/both-directions",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.2502991066521442,
+    "b_beats_a": 240,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "MJ76-insertion/all-strain",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0,
+    "a_beats_b": 0,
+    "b_avg_relative_improvement_when_beats": 0.22731305681507835,
+    "b_beats_a": 240,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.044156982640140306,
+    "a_beats_b": 3,
+    "b_avg_relative_improvement_when_beats": 0.25042461639876873,
+    "b_beats_a": 237,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0573759762637734,
+    "a_beats_b": 23,
+    "b_avg_relative_improvement_when_beats": 0.14915357300596488,
+    "b_beats_a": 217,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "Ty68-NN/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0677286386021564,
+    "a_beats_b": 30,
+    "b_avg_relative_improvement_when_beats": 0.15911817357139438,
+    "b_beats_a": 210,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.06554381327553513,
+    "a_beats_b": 9,
+    "b_avg_relative_improvement_when_beats": 0.1591157381597925,
+    "b_beats_a": 231,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.08799171842650104,
+    "a_beats_b": 1,
+    "b_avg_relative_improvement_when_beats": 0.2400531040462007,
+    "b_beats_a": 239,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13866061865170648,
+    "a_beats_b": 75,
+    "b_avg_relative_improvement_when_beats": 0.13741377542929095,
+    "b_beats_a": 165,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.011768650789830167,
+    "a_beats_b": 6,
+    "b_avg_relative_improvement_when_beats": 0.012828224313482179,
+    "b_beats_a": 234,
+    "solver_a": "cheapest-insertion/sequential-farthest",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.0481025674147803,
+    "a_beats_b": 163,
+    "b_avg_relative_improvement_when_beats": 0.020536086778815778,
+    "b_beats_a": 54,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "CMT79-2phase/default",
+    "ties": 23
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.033422629881793106,
+    "a_beats_b": 102,
+    "b_avg_relative_improvement_when_beats": 0.02420920314777964,
+    "b_beats_a": 115,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 23
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1389102490846762,
+    "a_beats_b": 236,
+    "b_avg_relative_improvement_when_beats": 0.015390174339812405,
+    "b_beats_a": 3,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "Ty68-NN/default",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13498216921191844,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.08672086720867209,
+    "b_beats_a": 1,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1164198639492352,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.0,
+    "b_beats_a": 0,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.031082493520483822,
+    "a_beats_b": 155,
+    "b_avg_relative_improvement_when_beats": 0.0232019340749557,
+    "b_beats_a": 60,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 25
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.20465769010222906,
+    "a_beats_b": 236,
+    "b_avg_relative_improvement_when_beats": 0.012699693455675209,
+    "b_beats_a": 3,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.24095165768214305,
+    "a_beats_b": 240,
+    "b_avg_relative_improvement_when_beats": 0.0,
+    "b_beats_a": 0,
+    "solver_a": "MJ76-insertion/all-strain",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03373502491958272,
+    "a_beats_b": 52,
+    "b_avg_relative_improvement_when_beats": 0.04509689704858243,
+    "b_beats_a": 174,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "Be83-RFCS/default",
+    "ties": 14
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11945292781420619,
+    "a_beats_b": 226,
+    "b_avg_relative_improvement_when_beats": 0.04433185283985022,
+    "b_beats_a": 12,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "Ty68-NN/default",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11707351926031594,
+    "a_beats_b": 227,
+    "b_avg_relative_improvement_when_beats": 0.04992233297102307,
+    "b_beats_a": 13,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1012559756928499,
+    "a_beats_b": 217,
+    "b_avg_relative_improvement_when_beats": 0.026548595654440992,
+    "b_beats_a": 21,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 2
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03159680672420445,
+    "a_beats_b": 94,
+    "b_avg_relative_improvement_when_beats": 0.0455682382213799,
+    "b_beats_a": 138,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 8
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.19307022137154517,
+    "a_beats_b": 222,
+    "b_avg_relative_improvement_when_beats": 0.028189141220646967,
+    "b_beats_a": 17,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.21861204884518862,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.0028208744710860366,
+    "b_beats_a": 1,
+    "solver_a": "CMT79-2phase/default",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13757810320781072,
+    "a_beats_b": 235,
+    "b_avg_relative_improvement_when_beats": 0.05834828498430822,
+    "b_beats_a": 5,
+    "solver_a": "Be83-RFCS/default",
+    "solver_b": "Ty68-NN/default",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.13286952274069,
+    "a_beats_b": 238,
+    "b_avg_relative_improvement_when_beats": 0.02700046432440799,
+    "b_beats_a": 2,
+    "solver_a": "Be83-RFCS/default",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.11482119730694429,
+    "a_beats_b": 237,
+    "b_avg_relative_improvement_when_beats": 0.027808082151210934,
+    "b_beats_a": 2,
+    "solver_a": "Be83-RFCS/default",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03424787164461895,
+    "a_beats_b": 151,
+    "b_avg_relative_improvement_when_beats": 0.031129457266233156,
+    "b_beats_a": 77,
+    "solver_a": "Be83-RFCS/default",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 12
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1999400361255164,
+    "a_beats_b": 239,
+    "b_avg_relative_improvement_when_beats": 0.0,
+    "b_beats_a": 0,
+    "solver_a": "Be83-RFCS/default",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.2411769582201682,
+    "a_beats_b": 237,
+    "b_avg_relative_improvement_when_beats": 0.05859638304970154,
+    "b_beats_a": 3,
+    "solver_a": "Be83-RFCS/default",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.05452401806513729,
+    "a_beats_b": 117,
+    "b_avg_relative_improvement_when_beats": 0.05969429426625351,
+    "b_beats_a": 118,
+    "solver_a": "Ty68-NN/default",
+    "solver_b": "SNN/farthest-seed/both-route-ends",
+    "ties": 5
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.05016801650109595,
+    "a_beats_b": 102,
+    "b_avg_relative_improvement_when_beats": 0.07684302283748519,
+    "b_beats_a": 135,
+    "solver_a": "Ty68-NN/default",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 3
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.027127181409179753,
+    "a_beats_b": 9,
+    "b_avg_relative_improvement_when_beats": 0.1297740401824141,
+    "b_beats_a": 230,
+    "solver_a": "Ty68-NN/default",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.15435936795833408,
+    "a_beats_b": 161,
+    "b_avg_relative_improvement_when_beats": 0.09116892295380567,
+    "b_beats_a": 79,
+    "solver_a": "Ty68-NN/default",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.14278774073982842,
+    "a_beats_b": 211,
+    "b_avg_relative_improvement_when_beats": 0.0571288546444258,
+    "b_beats_a": 29,
+    "solver_a": "Ty68-NN/default",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.053583902029326974,
+    "a_beats_b": 100,
+    "b_avg_relative_improvement_when_beats": 0.07176333776274252,
+    "b_beats_a": 139,
+    "solver_a": "SNN/farthest-seed/both-route-ends",
+    "solver_b": "SNN/closest-seed/both-route-ends",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.03791419125063441,
+    "a_beats_b": 7,
+    "b_avg_relative_improvement_when_beats": 0.1259510825146869,
+    "b_beats_a": 233,
+    "solver_a": "SNN/farthest-seed/both-route-ends",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.14732479886586858,
+    "a_beats_b": 168,
+    "b_avg_relative_improvement_when_beats": 0.0887025871286321,
+    "b_beats_a": 72,
+    "solver_a": "SNN/farthest-seed/both-route-ends",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.14881411528363517,
+    "a_beats_b": 210,
+    "b_avg_relative_improvement_when_beats": 0.08017677530370358,
+    "b_beats_a": 30,
+    "solver_a": "SNN/farthest-seed/both-route-ends",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.025466866871251742,
+    "a_beats_b": 3,
+    "b_avg_relative_improvement_when_beats": 0.10483874186221363,
+    "b_beats_a": 236,
+    "solver_a": "SNN/closest-seed/both-route-ends",
+    "solver_b": "CW64-PS/minimize-distance+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.15534782656458385,
+    "a_beats_b": 174,
+    "b_avg_relative_improvement_when_beats": 0.06343846355521485,
+    "b_beats_a": 65,
+    "solver_a": "SNN/closest-seed/both-route-ends",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1513428038399992,
+    "a_beats_b": 227,
+    "b_avg_relative_improvement_when_beats": 0.06041651654309899,
+    "b_beats_a": 12,
+    "solver_a": "SNN/closest-seed/both-route-ends",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.1976076947712166,
+    "a_beats_b": 231,
+    "b_avg_relative_improvement_when_beats": 0.02842563934150338,
+    "b_beats_a": 8,
+    "solver_a": "CW64-PS/minimize-distance+2opt1",
+    "solver_b": "basic-sweep/both-directions/best-start+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.2316102154592141,
+    "a_beats_b": 238,
+    "b_avg_relative_improvement_when_beats": 0.11076604554865424,
+    "b_beats_a": 1,
+    "solver_a": "CW64-PS/minimize-distance+2opt1",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 1
+  },
+  {
+    "a_avg_relative_improvement_when_beats": 0.12799060611574845,
+    "a_beats_b": 162,
+    "b_avg_relative_improvement_when_beats": 0.14116184236305448,
+    "b_beats_a": 78,
+    "solver_a": "basic-sweep/both-directions/best-start+2opt1",
+    "solver_b": "cheapest-insertion/sequential-farthest+2opt1",
+    "ties": 0
+  }
+]

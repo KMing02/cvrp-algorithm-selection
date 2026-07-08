@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "Be83-RFCS/default": 323,
+    "CMT79-2phase/default": 119,
+    "CW64-PS/minimize-distance+2opt1": 314,
+    "MJ76-insertion/all-strain": 266,
+    "WH72-sweep/both-directions": 238
+  },
+  "percentages": {
+    "Be83-RFCS/default": 0.2563492063492063,
+    "CMT79-2phase/default": 0.09444444444444444,
+    "CW64-PS/minimize-distance+2opt1": 0.2492063492063492,
+    "MJ76-insertion/all-strain": 0.2111111111111111,
+    "WH72-sweep/both-directions": 0.18888888888888888
+  }
+}
