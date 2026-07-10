@@ -90,8 +90,6 @@ def _ring_ratios(depot_distances: np.ndarray) -> np.ndarray:
         ratios[0] = 1.0
         return ratios
     bins = np.linspace(0.0, max_distance, 6)
-    counts, _ = np.histogram(depot_distances, bins=bins)
-    counts[-1] += int(np.sum(depot_distances == max_distance)) - int(counts[-1] > 0 and np.max(depot_distances) == max_distance)
     # Use digitize for robust inclusion of the farthest customer in the last bin.
     indices = np.minimum(np.digitize(depot_distances, bins[1:], right=True), 4)
     counts = np.bincount(indices, minlength=5)

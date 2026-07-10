@@ -1,0 +1,90 @@
+{
+  "benchmark": "E-n51-k5",
+  "best_heuristic": {
+    "cost": 522.0,
+    "failure_reason": null,
+    "feasible": true,
+    "gap_to_best_known_percent": 0.19193857965451055,
+    "method": "WH72-sweep/both-directions",
+    "runtime_seconds": 0.16478799999458715
+  },
+  "best_known_cost": 521.0,
+  "exact_attempt": {
+    "failure_reason": "GurobiError: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information",
+    "feasible": false,
+    "lower_bound": null,
+    "mip_gap": null,
+    "n_constraints": 0,
+    "n_variables": 0,
+    "optimal": false,
+    "routes": [],
+    "runtime_seconds": 0.0,
+    "solver_name": "gurobipy-MTZ",
+    "status": "GurobiError",
+    "total_distance": null
+  },
+  "heuristics": [
+    {
+      "cost": 580.0,
+      "failure_reason": null,
+      "feasible": true,
+      "gap_to_best_known_percent": 11.324376199616124,
+      "method": "CW64-PS/minimize-distance+2opt1",
+      "runtime_seconds": 0.003947899967897683
+    },
+    {
+      "cost": 555.0,
+      "failure_reason": null,
+      "feasible": true,
+      "gap_to_best_known_percent": 6.525911708253358,
+      "method": "MJ76-insertion/all-strain",
+      "runtime_seconds": 0.06941060000099242
+    },
+    {
+      "cost": 522.0,
+      "failure_reason": null,
+      "feasible": true,
+      "gap_to_best_known_percent": 0.19193857965451055,
+      "method": "WH72-sweep/both-directions",
+      "runtime_seconds": 0.16478799999458715
+    },
+    {
+      "cost": 627.0,
+      "failure_reason": null,
+      "feasible": true,
+      "gap_to_best_known_percent": 20.34548944337812,
+      "method": "CMT79-2phase/default",
+      "runtime_seconds": 0.005133399972692132
+    },
+    {
+      "cost": 567.0,
+      "failure_reason": null,
+      "feasible": true,
+      "gap_to_best_known_percent": 8.829174664107486,
+      "method": "Be83-RFCS/default",
+      "runtime_seconds": 0.12425170000642538
+    }
+  ],
+  "n_customers": 50,
+  "selector": {
+    "class_probabilities": {
+      "Be83-RFCS/default": 0.20200000000000004,
+      "CMT79-2phase/default": 0.09480952380952382,
+      "CW64-PS/minimize-distance+2opt1": 0.17550000000000007,
+      "MJ76-insertion/all-strain": 0.19483333333333328,
+      "WH72-sweep/both-directions": 0.33285714285714296
+    },
+    "model": "RandomForest (frozen training split, RANDOM_STATE=20260708)",
+    "n_training_rows": 1008,
+    "predicted_solver": "WH72-sweep/both-directions",
+    "predicted_solver_result": {
+      "cost": 522.0,
+      "failure_reason": null,
+      "feasible": true,
+      "gap_to_best_known_percent": 0.19193857965451055,
+      "method": "WH72-sweep/both-directions",
+      "runtime_seconds": 0.16478799999458715
+    },
+    "prediction_is_best_in_portfolio": true
+  }
+}

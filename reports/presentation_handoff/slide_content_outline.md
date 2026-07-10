@@ -7,7 +7,7 @@
 ## 2. Problem Scope
 - Symmetric Euclidean CVRP.
 - One depot, homogeneous capacity, positive heterogeneous demands.
-- No exact solvers or advanced custom metaheuristics.
+- Exact solving (gurobipy MIP) only as a small-instance baseline; no advanced custom metaheuristics.
 
 ## 3. Solver Foundation
 - Reused VeRyPy classical heuristics.

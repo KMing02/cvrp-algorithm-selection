@@ -1,7 +1,10 @@
 # Q&A Cheatsheet
 
-## Why not compare against exact optima?
-The project target is algorithm selection among fast classical heuristics, not optimality proof. Labels are the virtual best solver within the selected portfolio.
+## How do the heuristics compare against exact optima?
+Small instances are solved exactly with gurobipy (MTZ-style MIP, `reports/exact_baseline/`): on the tiny manual instance all five heuristics match the proven optimum; on 20-customer instances the heuristics match or come within ~0.5% of Gurobi's 300-second incumbent in milliseconds; on E-n51-k5 the best heuristic is 0.19% above the proven optimum 521. Selector labels remain the virtual best solver within the portfolio, not exact optima, because exact solving does not scale to the full dataset.
+
+## What does the fixed time budget mean?
+Every portfolio solver runs under the same 20-second wall-clock budget (`TIME_BUDGET_SECONDS`); a solver that fails to finish is recorded as a failure. All feasible runs in the frozen experiment finished within the budget (max 16.98 s), so the labels are exactly "best solution within 20 s".
 
 ## Why exclude Gaskell?
 It was evaluated and remains implemented, but won only 3 of 240 development instances. Keeping it in the main classifier would create a class with too few examples for reliable supervised learning.

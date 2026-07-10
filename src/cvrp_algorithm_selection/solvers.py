@@ -4,9 +4,10 @@ from __future__ import annotations
 
 import random
 import signal
+import threading
 import time
 from collections.abc import Callable
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Any
 
 import numpy as np
@@ -33,6 +34,11 @@ from cvrp_algorithm_selection.validation import validate_solution
 
 Routes = list[list[int]]
 VeryPySolver = Callable[[np.ndarray, list[float], float, np.ndarray], list[int] | None]
+
+# Fixed per-solver wall-clock budget for the final ML portfolio. A solver that
+# does not return a feasible solution within this budget is recorded as failed,
+# so the "best solver" label means "best solution within the fixed time budget".
+TIME_BUDGET_SECONDS = 20.0
 
 
 @dataclass(frozen=True)
@@ -117,7 +123,17 @@ class SolverAdapter:
     ) -> list[int] | None:
         if self.timeout_seconds is None:
             return self._solve(distances, demands, capacity, coordinates)
+        if hasattr(signal, "SIGALRM") and threading.current_thread() is threading.main_thread():
+            return self._run_with_signal_timeout(distances, demands, capacity, coordinates)
+        return self._run_with_thread_timeout(distances, demands, capacity, coordinates)
 
+    def _run_with_signal_timeout(
+        self,
+        distances: np.ndarray,
+        demands: list[float],
+        capacity: float,
+        coordinates: np.ndarray,
+    ) -> list[int] | None:
         def _timeout_handler(signum: int, frame: Any) -> None:
             raise TimeoutError(f"solver exceeded {self.timeout_seconds} seconds")
 
@@ -129,6 +145,34 @@ class SolverAdapter:
         finally:
             signal.setitimer(signal.ITIMER_REAL, 0.0)
             signal.signal(signal.SIGALRM, old_handler)
+
+    def _run_with_thread_timeout(
+        self,
+        distances: np.ndarray,
+        demands: list[float],
+        capacity: float,
+        coordinates: np.ndarray,
+    ) -> list[int] | None:
+        # SIGALRM is unavailable on Windows (and outside the main thread), so
+        # run the solver in a daemon worker and abandon it on timeout. The
+        # abandoned worker cannot be killed and may keep consuming CPU until
+        # the underlying VeRyPy call returns on its own.
+        holder: dict[str, Any] = {}
+
+        def _target() -> None:
+            try:
+                holder["result"] = self._solve(distances, demands, capacity, coordinates)
+            except BaseException as exc:
+                holder["error"] = exc
+
+        worker = threading.Thread(target=_target, daemon=True)
+        worker.start()
+        worker.join(self.timeout_seconds)
+        if worker.is_alive():
+            raise TimeoutError(f"solver exceeded {self.timeout_seconds} seconds")
+        if "error" in holder:
+            raise holder["error"]
+        return holder.get("result")
 
 
 def verypy_solution_to_routes(solution: list[int] | None, depot_index: int = 0) -> Routes:
@@ -181,16 +225,21 @@ def recommended_solver_portfolio() -> list[SolverAdapter]:
 def final_ml_solver_portfolio() -> list[SolverAdapter]:
     """Five-solver portfolio used for the main ML selector.
 
-    Gaskell remains supported and documented in the audit, but it is excluded
-    here because it had too few winning labels in the development audit.
+    Every solver runs under the same fixed time budget so the resulting label
+    is "best solution within TIME_BUDGET_SECONDS". Gaskell remains supported
+    and documented in the audit, but it is excluded here because it had too
+    few winning labels in the development audit.
     """
 
     return [
-        _with_intra_route_2opt(_parallel_clarke_wright()),
-        _mole_jameson_insertion(),
-        _wren_holliday_sweep(),
-        _cmt_two_phase(),
-        _rfcs(),
+        replace(solver, timeout_seconds=TIME_BUDGET_SECONDS)
+        for solver in (
+            _with_intra_route_2opt(_parallel_clarke_wright()),
+            _mole_jameson_insertion(),
+            _wren_holliday_sweep(),
+            _cmt_two_phase(),
+            _rfcs(),
+        )
     ]
 
 

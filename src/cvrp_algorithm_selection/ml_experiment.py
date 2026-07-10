@@ -283,6 +283,7 @@ def run_ml_evaluation(output_dir: str | Path = REPORT_DIR) -> dict[str, Any]:
             model_train_times[name],
             model_predict_times[name],
             labels,
+            fallback_solver=sbs_solver,
         )
         model_results.append(metrics["summary"])
         per_class[name] = metrics["per_class"]
@@ -345,9 +346,19 @@ def validate_label_minima(df: pd.DataFrame, prefixes: dict[str, str], tolerance:
 
 
 def choose_sbs(train: pd.DataFrame, prefixes: dict[str, str]) -> str:
+    """Single best solver: lowest mean cost ratio to VBS on the training data.
+
+    A failed run has no cost, so it is penalised with the worst feasible cost
+    observed on that instance; without this, one NaN would poison the mean.
+    """
+
+    worst_feasible = train[[f"{prefix}_cost" for prefix in prefixes.values()]].max(axis=1)
     ratios = {}
     for name, prefix in prefixes.items():
-        ratios[name] = np.mean(train[f"{prefix}_cost"].astype(float) / train["best_cost"].astype(float))
+        costs = train[f"{prefix}_cost"].astype(float).fillna(worst_feasible)
+        ratios[name] = float(np.mean(costs / train["best_cost"].astype(float)))
+        if not math.isfinite(ratios[name]):
+            raise ValueError(f"non-finite SBS cost ratio for {name}")
     return min(ratios.items(), key=lambda item: item[1])[0]
 
 
@@ -360,9 +371,28 @@ def evaluate_predictions(
     train_time: float,
     predict_time: float,
     labels: list[str],
+    fallback_solver: str | None = None,
 ) -> dict[str, Any]:
-    selected_costs = np.asarray([float(test.iloc[i][f"{prefixes[pred]}_cost"]) for i, pred in enumerate(predicted)])
-    selected_runtimes = np.asarray([float(test.iloc[i][f"{prefixes[pred]}_runtime"]) for i, pred in enumerate(predicted)])
+    # Deployment fallback: if the predicted solver failed on an instance, the
+    # meta-solver falls back to the SBS instead of returning no solution.
+    selected_costs = []
+    selected_runtimes = []
+    fallback_count = 0
+    for i, pred in enumerate(predicted):
+        cost = float(test.iloc[i][f"{prefixes[pred]}_cost"])
+        runtime = float(test.iloc[i][f"{prefixes[pred]}_runtime"])
+        if not math.isfinite(cost) and fallback_solver is not None:
+            fallback_count += 1
+            cost = float(test.iloc[i][f"{prefixes[fallback_solver]}_cost"])
+            runtime += float(test.iloc[i][f"{prefixes[fallback_solver]}_runtime"])
+        if not math.isfinite(cost):
+            raise ValueError(
+                f"no feasible cost for prediction {pred} on test row {i} (fallback {fallback_solver})"
+            )
+        selected_costs.append(cost)
+        selected_runtimes.append(runtime)
+    selected_costs = np.asarray(selected_costs)
+    selected_runtimes = np.asarray(selected_runtimes)
     vbs_costs = test["best_cost"].astype(float).to_numpy()
     regrets = (selected_costs - vbs_costs) / vbs_costs
     ratios = selected_costs / vbs_costs
@@ -399,6 +429,7 @@ def evaluate_predictions(
         "median_selected_solver_runtime": float(np.median(selected_runtimes)),
         "train_time_seconds": float(train_time),
         "predict_time_seconds": float(predict_time),
+        "fallback_count": fallback_count,
     }
     _assert_finite(summary)
     return {
