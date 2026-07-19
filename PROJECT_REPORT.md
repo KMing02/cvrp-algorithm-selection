@@ -120,23 +120,57 @@ By depot position:
 
 The selector is strongest on 100-customer instances and weakest under high capacity pressure, suggesting more geometric structure helps and tightly constrained instances are intrinsically harder.
 
-**Benchmark demo (out-of-distribution).** On CVRPLIB `E-n51-k5` (proven optimum 521), the heuristic portfolio's best result is `WH72-sweep/both-directions` at 522 (+0.19%) in 0.16 s, and the Random Forest selector — trained only on synthetic instances — **correctly predicts** `WH72-sweep/both-directions` (class probability 0.33). The exact model was attempted and honestly recorded as exceeding the free size-limited Gurobi license (51 nodes → 2550 binary arc variables > 2000); with a full license it would run. A single benchmark is a demo, not a systematic out-of-distribution evaluation.
+**Benchmark demo (out-of-distribution).** On CVRPLIB `E-n51-k5` (proven optimum 521), the heuristic portfolio's best result is `WH72-sweep/both-directions` at 522 (+0.19%) in 0.16 s, and the Random Forest selector — trained only on synthetic instances — **correctly predicts** `WH72-sweep/both-directions` (class probability 0.33). The exact model was attempted and honestly recorded as exceeding the free size-limited Gurobi license (51 nodes → 2550 binary arc variables > 2000); with a full license it would run.
 
-## 11. Reproducibility And Integrity
+## 11. Out-of-Distribution Evaluation: CVRPLIB Sets A, B, E, P
+
+Following the paper's protocol of synthetic training and public-benchmark testing, the frozen-split Random Forest was evaluated on the classic CVRPLIB sets A, B, E, and P — 85 real instances (32–101 nodes, rounded EUC_2D; the two E instances without Euclidean coordinates are skipped and recorded) that the model never saw. All five portfolio solvers were re-run under the same 20 s budget to establish the per-instance label and portfolio VBS; optima parsed from the CVRPLIB `.sol` files anchor absolute quality (`reports/cvrplib_ood/`).
+
+| Set | n | RF accuracy | RF mean regret | SBS mean regret | RF within 1% | SBS within 1% | m̂ |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A | 27 | 0.333 | 0.0108 | 0.0108 | 0.630 | 0.593 | 1.00 |
+| B | 23 | 0.348 | 0.0135 | 0.0159 | 0.522 | 0.435 | 0.85 |
+| E | 11 | 0.273 | 0.0261 | 0.0237 | 0.455 | 0.273 | 1.10 |
+| P | 24 | 0.292 | 0.0283 | 0.0283 | 0.458 | 0.333 | 1.00 |
+| **All** | **85** | **0.318** | **0.0184** | **0.0188** | **0.529** | **0.435** | **0.98** |
+
+The honest headline: the selector transfers only partially. The within-1%-of-VBS rate still improves clearly over SBS (52.9% vs 43.5%), and set B shows a genuine regret gain (m̂ = 0.85), but overall mean regret is essentially tied with SBS (m̂ = 0.98) — far from the in-distribution m̂ = 0.74. This mirrors the paper's own error analysis: their selector also degrades on stylized benchmark families unlike the randomized training distribution. The portfolio VBS itself averages 1.98% above the proven optima, and the ML-selected solver 3.85%, so the fast portfolio remains within a few percent of optimal on real benchmarks.
+
+## 12. Hyperparameter Tuning Supplement
+
+The paper adjusts model parameters "by performing a grid search, using k-fold cross validation, with k = 5"; the frozen headline experiment used fixed hyperparameters instead. To close this gap without touching the frozen artifacts, a paper-style grid search (5-fold stratified CV, training split only) was run for RF, KNN, Decision Tree, and Gradient Boosting, with a single evaluation of each tuned model on the frozen test split (`reports/hyperparameter_tuning/`). Best CV accuracies land in a narrow band (0.392–0.404), and tuned test regrets (0.0114–0.0133) straddle the frozen Random Forest's 0.0124 within noise. Conclusion: the fixed hyperparameters were reasonable, and the frozen headline results stand.
+
+## 13. Extension: Speed-Quality Trade-Off Versus PyVRP HGS
+
+Beyond the core requirement, PyVRP's hybrid genetic search (HGS) — a state-of-the-art CVRP metaheuristic — was benchmarked at the same fixed 20 s budget on a stratified subsample of the frozen test split (45 instances: 3 per customer-count × spatial-family cell), plus E-n51-k5 (`reports/hgs_benchmark/`). Every HGS solution is revalidated and re-costed by the project's independent code under the same distance convention.
+
+| Customers | HGS gain vs ML-selected | HGS gain vs portfolio VBS | ML-selected runtime | HGS runtime |
+|---:|---:|---:|---:|---:|
+| 20 | +2.5% | +0.2% | 0.02 s | 20 s |
+| 50 | +3.7% | +2.4% | 0.12 s | 20 s |
+| 100 | +4.3% | +3.8% | 0.51 s | 20 s |
+| **All (45)** | **+3.5%** | **+2.1%** | **0.22 s** | **20 s** |
+
+HGS beats or ties the portfolio VBS on **100%** of the sampled instances, and it recovers the proven optimum 521 on E-n51-k5 within the budget. This is precisely why HGS is deliberately **excluded** from the selector's portfolio: a solver that wins essentially every instance would collapse the label distribution into one dominant class (the pipeline enforces an 80% dominance ceiling) and trivialise the learning problem. Instead, HGS quantifies the trade-off the project is about: the ML-selected classical heuristic delivers its answer roughly **90× faster** (0.22 s vs the full 20 s) at a mean cost premium of ~3.5%, and the premium shrinks to ~2.5% on small instances where HGS's advantage is thinnest. For real-time selection or for seeding a global optimizer, the fast portfolio plus selector is the right tool; when 20 s per instance is affordable, running HGS directly is simply better — algorithm selection among fast heuristics and heavyweight metaheuristics answer different operational questions.
+
+## 14. Reproducibility And Integrity
 
 VeRyPy is pinned to commit `8698f910ffcfb4bc8743aedbf203d6de72fbe006`; gurobipy 13 installs with the free size-limited license, which covers every exact solve reported here. The pipeline validates that final labels equal the minimum feasible portfolio cost, train/test instance IDs are disjoint, VBS regret is exactly zero and its cost ratio exactly one, prohibited solver/result/label columns cannot enter the feature matrix, and all metrics are finite. Every solution — heuristic or exact — is re-validated and re-costed by independent code. The frozen ML experiment (`reports/final_ml_experiment/`) was generated once; the exact baseline (`reports/exact_baseline/`) reproduces with `uv run python -m cvrp_algorithm_selection.exact_baseline`.
 
-## 12. Limitations
+## 15. Limitations
 
-- The selector is trained and tested on synthetic instances; only one CVRPLIB benchmark probes out-of-distribution behavior.
-- Labels come from a small classical-heuristic portfolio, not exact optima; the VBS is a portfolio oracle.
-- Random Forest improves regret over SBS, but the margin is moderate (m̂ = 0.741).
-- The fixed time budget bounds runtime but the label objective does not reward faster solvers among non-tied costs.
+- The selector is trained on synthetic instances. The CVRPLIB evaluation (Section 11) shows the transfer to real benchmarks is partial: the within-1% rate improves over SBS but mean regret is essentially tied (m̂ = 0.98 out-of-distribution vs 0.74 in-distribution). Larger benchmark families (M, Golden, X) remain untested.
+- Labels come from a small classical-heuristic portfolio, not exact optima; the VBS is a portfolio oracle. Against proven optima on CVRPLIB, the portfolio VBS averages +1.98%.
+- Random Forest improves regret over SBS in-distribution, but the margin is moderate (m̂ = 0.741).
+- The fixed time budget bounds runtime but the label objective does not reward faster solvers among non-tied costs. The HGS extension (Section 13) shows how much quality a solver that *spends* the budget can buy back.
 - The exact MIP baseline uses a weak MTZ formulation; it proves optimality only on the smallest instance within 300 s, and the free Gurobi license caps exactly solvable size.
+- New experiments (Sections 11-13) were produced on Python 3.14 with the pinned VeRyPy commit; the frozen headline experiment predates them and is unchanged. Environment versions are recorded in the artifacts.
 
-## 13. Conclusion
+## 16. Conclusion
 
-The requirement is met end-to-end: the problem is introduced with exact (gurobipy) and heuristic solutions on benchmark and self-created instances; measurable pre-solution features — size, demand variance, depot centrality, and geometry — feed a classifier that predicts the best heuristic configuration under a fixed 20 s budget; and the resulting Random Forest meta-solver beats the single-best-solver baseline on routing regret (m̂ = 0.741), mirroring the algorithm-selection findings of Asín-Achá et al. at student scale, including a correct prediction on a real CVRPLIB benchmark.
+The requirement is met end-to-end: the problem is introduced with exact (gurobipy) and heuristic solutions on benchmark and self-created instances; measurable pre-solution features — size, demand variance, depot centrality, and geometry — feed a classifier that predicts the best heuristic configuration under a fixed 20 s budget; and the resulting Random Forest meta-solver beats the single-best-solver baseline on routing regret (m̂ = 0.741), mirroring the algorithm-selection findings of Asín-Achá et al. at student scale.
+
+The extended evaluation adds three pieces of evidence. On 85 real CVRPLIB instances (sets A, B, E, P) the selector transfers partially: it still picks a within-1%-of-VBS solver clearly more often than the SBS (52.9% vs 43.5%), but its mean-regret advantage largely vanishes under distribution shift (m̂ = 0.98) — an honest replication of the paper's observation that stylized benchmarks are hard for synthetically trained selectors. The paper-style 5-fold grid search confirms the frozen hyperparameters were near-optimal. Finally, benchmarking PyVRP's hybrid genetic search at the same 20 s budget frames the whole exercise: HGS buys ~3.5% better routes at ~90× the compute of the ML-selected fast heuristic, which is exactly the regime — real-time answers, or initial solutions for global optimizers — where learned selection among fast classical heuristics earns its place.
 
 ## References
 
@@ -150,3 +184,5 @@ The requirement is met end-to-end: the problem is introduced with exact (gurobip
 8. Beasley, J. E. (1983). Route first–cluster second methods for vehicle routing. *Omega*, 11(4), 403–408.
 9. Christofides, N., Eilon, S. (1969). An algorithm for the vehicle-dispatching problem. *Operational Research Quarterly*, 20(3), 309–318. (Source of the E-n51-k5 benchmark; best-known value via CVRPLIB.)
 10. Gurobi Optimization, LLC (2026). *Gurobi Optimizer Reference Manual*. https://www.gurobi.com.
+11. Wouda, N. A., Lan, L., Kool, W. (2024). PyVRP: a high-performance VRP solver package. *INFORMS Journal on Computing*, 36(4), 943–955. (PyVRP implements hybrid genetic search following Vidal et al. 2012 / Vidal 2022.)
+12. Vidal, T. (2022). Hybrid genetic search for the CVRP: Open-source implementation and SWAP* neighborhood. *Computers & Operations Research*, 140, 105643.

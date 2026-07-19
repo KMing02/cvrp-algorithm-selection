@@ -1,0 +1,22 @@
+{
+  "environment": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "python": "3.14.6",
+    "pyvrp": "0.13.4",
+    "scikit_learn": "1.9.0"
+  },
+  "hgs_seed": 0,
+  "hgs_win_or_tie_rate_vs_vbs": 1.0,
+  "mean_hgs_gain_vs_rf_selected": 0.0349112711405068,
+  "mean_hgs_gain_vs_vbs": 0.021458602906890084,
+  "mean_hgs_runtime": 20.003027291111096,
+  "mean_rf_selected_runtime": 0.21909152689234665,
+  "median_hgs_gain_vs_rf_selected": 0.03531073446327684,
+  "n_hgs_feasible": 45,
+  "n_instances": 45,
+  "runtime_ratio_hgs_over_rf_selected": 91.29986711416655,
+  "sampling": "first 3 instances by instance_id per (customer_count, spatial_family) cell of the frozen test split",
+  "sbs_solver": "MJ76-insertion/all-strain",
+  "time_budget_seconds": 20.0
+}

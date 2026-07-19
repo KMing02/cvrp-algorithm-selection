@@ -1,0 +1,96 @@
+{
+  "label_counts": {
+    "Be83-RFCS/default": 13,
+    "CMT79-2phase/default": 11,
+    "CW64-PS/minimize-distance+2opt1": 19,
+    "MJ76-insertion/all-strain": 17,
+    "WH72-sweep/both-directions": 25
+  },
+  "overall": {
+    "m_hat": 0.9813552917423085,
+    "n": 85,
+    "rf_accuracy": 0.3176470588235294,
+    "rf_mean_cost_ratio": 1.0184420842127642,
+    "rf_mean_gap_to_optimal_percent": 3.8533505215190846,
+    "rf_mean_regret": 0.018442084212764037,
+    "rf_within_1_percent": 0.5294117647058824,
+    "sbs_mean_cost_ratio": 1.0187924642256954,
+    "sbs_mean_regret": 0.018792464225695197,
+    "sbs_within_1_percent": 0.43529411764705883,
+    "vbs_mean_gap_to_optimal_percent": 1.9777586957472777
+  },
+  "per_set": {
+    "A": {
+      "m_hat": 1.0004931552136271,
+      "n": 27,
+      "rf_accuracy": 0.3333333333333333,
+      "rf_mean_cost_ratio": 1.0107886149410865,
+      "rf_mean_gap_to_optimal_percent": 3.5928775872825107,
+      "rf_mean_regret": 0.010788614941086579,
+      "rf_within_1_percent": 0.6296296296296297,
+      "sbs_mean_cost_ratio": 1.0107832971019006,
+      "sbs_mean_regret": 0.010783297101900687,
+      "sbs_within_1_percent": 0.5925925925925926,
+      "vbs_mean_gap_to_optimal_percent": 2.485950059795689
+    },
+    "B": {
+      "m_hat": 0.8479558484882216,
+      "n": 23,
+      "rf_accuracy": 0.34782608695652173,
+      "rf_mean_cost_ratio": 1.0135079899517485,
+      "rf_mean_gap_to_optimal_percent": 3.1202564817187493,
+      "rf_mean_regret": 0.013507989951748624,
+      "rf_within_1_percent": 0.5217391304347826,
+      "sbs_mean_cost_ratio": 1.0159300628397472,
+      "sbs_mean_regret": 0.01593006283974734,
+      "sbs_within_1_percent": 0.43478260869565216,
+      "vbs_mean_gap_to_optimal_percent": 1.761587333396642
+    },
+    "E": {
+      "m_hat": 1.0985286625915287,
+      "n": 11,
+      "rf_accuracy": 0.2727272727272727,
+      "rf_mean_cost_ratio": 1.02605076236398,
+      "rf_mean_gap_to_optimal_percent": 4.351077867676322,
+      "rf_mean_regret": 0.02605076236398025,
+      "rf_within_1_percent": 0.45454545454545453,
+      "sbs_mean_cost_ratio": 1.0237142309082077,
+      "sbs_mean_regret": 0.023714230908207647,
+      "sbs_within_1_percent": 0.2727272727272727,
+      "vbs_mean_gap_to_optimal_percent": 1.6963451924267423
+    },
+    "P": {
+      "m_hat": 1.0001177497416127,
+      "n": 24,
+      "rf_accuracy": 0.2916666666666667,
+      "rf_mean_cost_ratio": 1.0282934333242335,
+      "rf_mean_gap_to_optimal_percent": 4.620805993688482,
+      "rf_mean_regret": 0.02829343332423352,
+      "rf_within_1_percent": 0.4583333333333333,
+      "sbs_mean_cost_ratio": 1.0282901021720126,
+      "sbs_mean_regret": 0.028290102172012513,
+      "sbs_within_1_percent": 0.3333333333333333,
+      "vbs_mean_gap_to_optimal_percent": 1.7421888224674191
+    }
+  },
+  "prediction_counts": {
+    "Be83-RFCS/default": 1,
+    "CMT79-2phase/default": 5,
+    "CW64-PS/minimize-distance+2opt1": 24,
+    "MJ76-insertion/all-strain": 46,
+    "WH72-sweep/both-directions": 9
+  },
+  "sbs_solver": "MJ76-insertion/all-strain",
+  "skipped_instances": [
+    {
+      "benchmark_set": "E",
+      "instance": "E-n13-k4",
+      "reason": "no Euclidean coordinates (EDGE_WEIGHT_TYPE is not EUC_2D)"
+    },
+    {
+      "benchmark_set": "E",
+      "instance": "E-n31-k7",
+      "reason": "no Euclidean coordinates (EDGE_WEIGHT_TYPE is not EUC_2D)"
+    }
+  ]
+}

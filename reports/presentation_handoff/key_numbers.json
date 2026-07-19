@@ -114,6 +114,45 @@
       "importance": 0.0318135297056578
     }
   ],
+  "extensions_2026_07_19": {
+    "cvrplib_ood": {
+      "instances": 85,
+      "sets": ["A", "B", "E", "P"],
+      "skipped_non_euclidean": ["E-n13-k4", "E-n31-k7"],
+      "rf_accuracy": 0.3176,
+      "rf_mean_regret": 0.0184,
+      "sbs_mean_regret": 0.0188,
+      "rf_within_1_percent": 0.5294,
+      "sbs_within_1_percent": 0.4353,
+      "m_hat_overall": 0.981,
+      "m_hat_per_set": {"A": 1.0, "B": 0.848, "E": 1.099, "P": 1.0},
+      "vbs_mean_gap_to_optimal_percent": 1.978,
+      "rf_mean_gap_to_optimal_percent": 3.853,
+      "artifacts": "reports/cvrplib_ood/"
+    },
+    "hgs_benchmark": {
+      "instances": 45,
+      "sampling": "3 per (customer_count x spatial_family) cell of frozen test split",
+      "time_budget_seconds": 20.0,
+      "hgs_win_or_tie_rate_vs_vbs": 1.0,
+      "mean_hgs_gain_vs_rf_selected": 0.0349,
+      "mean_hgs_gain_vs_vbs": 0.0215,
+      "mean_rf_selected_runtime_seconds": 0.219,
+      "mean_hgs_runtime_seconds": 20.0,
+      "runtime_ratio_hgs_over_rf_selected": 91.3,
+      "e_n51_k5_hgs_cost": 521.0,
+      "e_n51_k5_optimal": true,
+      "artifacts": "reports/hgs_benchmark/"
+    },
+    "hyperparameter_tuning": {
+      "protocol": "5-fold stratified grid search on frozen training split; single test-split evaluation",
+      "cv_accuracy_range": [0.392, 0.404],
+      "tuned_test_mean_regret_range": [0.0114, 0.0133],
+      "frozen_rf_test_mean_regret": 0.0124,
+      "conclusion": "fixed hyperparameters confirmed reasonable; frozen headline stands",
+      "artifacts": "reports/hyperparameter_tuning/"
+    }
+  },
   "optional_seed_held_out_robustness": {
     "split": "train seeds except 6; test seed 6",
     "heldout_seed": 6,

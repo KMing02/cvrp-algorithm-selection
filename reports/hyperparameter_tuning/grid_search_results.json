@@ -1,0 +1,40 @@
+{
+  "DecisionTree": {
+    "best_params": {
+      "max_depth": 4,
+      "min_samples_leaf": 1
+    },
+    "cv_accuracy": 0.40181271858529133,
+    "n_candidates": 12,
+    "search_time_seconds": 0.17264120000027106
+  },
+  "GradientBoosting": {
+    "best_params": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "n_estimators": 100
+    },
+    "cv_accuracy": 0.39383281611743265,
+    "n_candidates": 8,
+    "search_time_seconds": 4.942012200000136
+  },
+  "KNN": {
+    "best_params": {
+      "model__n_neighbors": 15,
+      "model__weights": "distance"
+    },
+    "cv_accuracy": 0.4037387320821635,
+    "n_candidates": 10,
+    "search_time_seconds": 0.2602527999997619
+  },
+  "RandomForest": {
+    "best_params": {
+      "max_features": "sqrt",
+      "min_samples_leaf": 5,
+      "n_estimators": 100
+    },
+    "cv_accuracy": 0.39186246982907247,
+    "n_candidates": 18,
+    "search_time_seconds": 7.8234551999998985
+  }
+}

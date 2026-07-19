@@ -23,13 +23,12 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
 
 from cvrp_algorithm_selection.data import load_cvrplib_with_verypy, tiny_manual_instance
 from cvrp_algorithm_selection.exact import solve_cvrp_with_gurobi
 from cvrp_algorithm_selection.features import extract_instance_features
 from cvrp_algorithm_selection.instance import CVRPInstance
-from cvrp_algorithm_selection.ml_experiment import RANDOM_STATE, feature_columns
+from cvrp_algorithm_selection.ml_experiment import RANDOM_STATE, train_frozen_random_forest
 from cvrp_algorithm_selection.solvers import final_ml_solver_portfolio
 from cvrp_algorithm_selection.synthetic import SyntheticCVRPConfig, generate_synthetic_instance
 
@@ -166,6 +165,11 @@ def run_benchmark_selector_demo(
             }
         )
     feasible_rows = [row for row in heuristic_rows if row["feasible"]]
+    if not feasible_rows:
+        raise RuntimeError(
+            f"no portfolio solver produced a feasible solution for {instance.name}: "
+            f"{[row['failure_reason'] for row in heuristic_rows]}"
+        )
     best_row = min(feasible_rows, key=lambda row: row["cost"])
 
     exact = solve_cvrp_with_gurobi(instance, time_limit_seconds=exact_time_limit_seconds)
@@ -201,21 +205,7 @@ def _predict_with_frozen_random_forest(instance: CVRPInstance) -> dict[str, Any]
     """Train the reported Random Forest on the frozen training split and
     predict the best solver for one out-of-distribution instance."""
 
-    df = pd.read_csv(FINAL_ML_DIR / "experiment_table.csv")
-    manifest = json.loads((FINAL_ML_DIR / "split_manifest.json").read_text())
-    train = df[df["instance_id"].isin(set(manifest["train_instance_ids"]))]
-    features = json.loads((FINAL_ML_DIR / "feature_columns.json").read_text())
-    assert features == feature_columns(df)
-
-    model = RandomForestClassifier(
-        n_estimators=250,
-        max_depth=None,
-        min_samples_leaf=2,
-        class_weight="balanced",
-        random_state=RANDOM_STATE,
-        n_jobs=-1,
-    )
-    model.fit(train[features], train["best_solver"])
+    model, features, train, _ = train_frozen_random_forest(FINAL_ML_DIR)
 
     instance_features = extract_instance_features(instance)
     X = pd.DataFrame([{name: instance_features[name] for name in features}])

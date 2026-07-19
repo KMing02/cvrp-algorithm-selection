@@ -71,8 +71,22 @@
 - High-pressure demand is hardest.
 - Random depot position has lower accuracy.
 
-## 15. Limitations And Next Work
-- Synthetic data only.
+## 15. Out-of-Distribution: CVRPLIB A/B/E/P
+- Frozen selector evaluated on 87 real benchmark instances never seen in training.
+- Show per-set accuracy/regret table from `reports/cvrplib_ood/cvrplib_ood_summary.json`.
+- Optima from `.sol` files anchor absolute solution quality.
+
+## 16. Extension: Speed-Quality Trade-Off (PyVRP HGS)
+- HGS benchmarked at the same 20 s budget on a stratified test subsample (`reports/hgs_benchmark/`).
+- HGS deliberately outside the ML portfolio: it would dominate the labels and trivialise learning.
+- Message: ML-selected heuristic answers in well under a second; HGS spends the full budget for a few percent better routes.
+
+## 17. Hyperparameter Tuning Supplement
+- Paper-style 5-fold grid search on the training split (`reports/hyperparameter_tuning/`).
+- Tuned models within noise of the frozen fixed-parameter results.
+
+## 18. Limitations And Next Work
+- Main experiment synthetic; OOD evaluation covers small classic sets only (A/B/E/P, not M/Golden/X).
 - Heuristic labels are not true optima.
 - Runtime not part of objective.
-- Possible next step: broader benchmark instances and cost-runtime multi-objective labels.
+- Possible next step: larger benchmark families and cost-runtime multi-objective labels.

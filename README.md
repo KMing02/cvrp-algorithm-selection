@@ -1,6 +1,6 @@
 # Learning which VRP solver works best
 
-This repository contains a computational logistics project on machine-learning-based algorithm selection for the Capacitated Vehicle Routing Problem (CVRP). Given measurable features of an instance (size, demand variance, depot centrality, ...), a classifier predicts which heuristic configuration will yield the best solution within a fixed time budget. The project introduces the problem by solving benchmark and self-created instances both exactly (gurobipy) and heuristically, uses classical CVRP heuristics from VeRyPy as the solver portfolio, validates every solution independently, generates synthetic CVRP instances, extracts pre-solution features, and evaluates ML selectors against SBS and VBS baselines.
+This repository contains a computational logistics project on machine-learning-based algorithm selection for the Capacitated Vehicle Routing Problem (CVRP). Given measurable features of an instance (size, demand variance, depot centrality, ...), a classifier predicts which heuristic configuration will yield the best solution within a fixed time budget. The project introduces the problem by solving benchmark and self-created instances both exactly (gurobipy) and heuristically, uses classical CVRP heuristics from VeRyPy as the solver portfolio, validates every solution independently, generates synthetic CVRP instances, extracts pre-solution features, and evaluates ML selectors against SBS and VBS baselines. Three extensions round out the evaluation: an out-of-distribution test on 85 real CVRPLIB instances (sets A, B, E, P), a paper-style hyperparameter grid search, and a speed-quality benchmark against PyVRP's hybrid genetic search at the same time budget.
 
 The methodology follows Asín-Achá et al. (2024), "Selecting fast algorithms for the capacitated vehicle routing problem with machine learning techniques", *Networks* 84(4):465-480, at student scale.
 
@@ -12,7 +12,7 @@ The main ML experiment is complete and frozen for presentation/reporting. Do not
 - One depot, homogeneous vehicle capacity, heterogeneous positive customer demands, unlimited fleet.
 - Routes start and end at the depot.
 - Exact solving with gurobipy is used only for the problem-introduction baseline on small instances; labels for the ML selector come from the heuristic portfolio.
-- No VRPTW, pickup and delivery, heterogeneous fleets, reinforcement learning, OR-Tools production dependency, or custom HGS implementation.
+- No VRPTW, pickup and delivery, heterogeneous fleets, reinforcement learning, OR-Tools production dependency, or custom HGS implementation. PyVRP's hybrid genetic search is used only as an external heavyweight reference (`reports/hgs_benchmark/`), deliberately outside the ML selector's portfolio.
 
 ## Setup
 
@@ -31,6 +31,8 @@ git+https://github.com/yorak/VeRyPy.git@8698f910ffcfb4bc8743aedbf203d6de72fbe006
 The PyPI package named `verypy==1.0.5` is unrelated file-hashing code; this project uses the CVRP heuristic library from GitHub.
 
 `gurobipy` installs with a free size-limited license (at most 2000 variables and 2000 constraints), which is sufficient for every exact solve in this project. A full license is only needed to solve larger instances exactly.
+
+`pyvrp` (>= 0.13, requires Python >= 3.11) provides the hybrid genetic search used by the speed-quality extension.
 
 ## Fixed Time Budget
 
@@ -125,14 +127,30 @@ Best ML model: `RandomForest`.
 
 m&#770; is the normalized selector metric from Asín-Achá et al. (2024): 0 means VBS-quality selection, 1 means no better than SBS. The Random Forest selector closes about 26% of the SBS-to-VBS gap. If the predicted solver fails on an instance, the meta-solver falls back to the SBS (this fallback never triggers on the frozen test set).
 
+## Out-of-Distribution Evaluation (CVRPLIB A, B, E, P)
+
+Following the paper's protocol of synthetic training and public-benchmark testing, the frozen-split Random Forest is evaluated on 85 classic CVRPLIB instances (32-101 nodes, rounded EUC_2D; the two E-set instances without Euclidean coordinates are skipped and recorded). All five portfolio solvers re-run under the 20 s budget per instance; `.sol` optima anchor absolute quality. Results (`reports/cvrplib_ood/`): RF within-1%-of-VBS rate 52.9% vs SBS 43.5%, mean regret 1.84% vs 1.88% (m&#770; = 0.98 overall; best transfer on set B with m&#770; = 0.85). The transfer is honest but partial — consistent with the paper's own finding that stylized benchmark families are hard for synthetically trained selectors. Against proven optima, the portfolio VBS averages +1.98% and the RF-selected solver +3.85%.
+
+## Extension: Speed-Quality Trade-Off Versus PyVRP HGS
+
+PyVRP's hybrid genetic search (HGS) is benchmarked at the same 20 s budget on a stratified 45-instance subsample of the frozen test split plus E-n51-k5 (`reports/hgs_benchmark/`). HGS beats or ties the portfolio VBS on 100% of the sampled instances (mean gain +2.1% vs VBS, +3.5% vs the ML-selected solver) and recovers the proven optimum on E-n51-k5 — but consumes the full 20 s, while the ML-selected classical heuristic answers in 0.22 s on average (about 90x less compute). HGS is deliberately excluded from the selector's portfolio: it would win nearly every label, collapse the class distribution (the pipeline enforces an 80% dominance ceiling), and trivialise the learning problem. Every HGS solution is revalidated and re-costed independently.
+
+## Hyperparameter Tuning Supplement
+
+The paper tunes its models by grid search with 5-fold cross-validation; the frozen headline experiment used fixed hyperparameters. A paper-style grid search on the frozen training split with a single evaluation on the frozen test split (`reports/hyperparameter_tuning/`) confirms the fixed choices: best CV accuracies span 0.392-0.404 across RF/KNN/DT/GB, and tuned test regrets (1.14%-1.33%) straddle the frozen Random Forest's 1.24% within noise. The frozen headline results stand unchanged.
+
 ## Main Artifacts
 
 - `PROJECT_REPORT.md`: final project report ("Learning which VRP solver works best").
 - `cvrp_algorithm_selection.ipynb`: compact fast-mode notebook that loads saved outputs.
 - `reports/final_ml_experiment/`: frozen final experiment tables, metrics, plots, and summaries.
 - `reports/exact_baseline/`: gurobipy exact-vs-heuristic baseline and benchmark selector demo.
+- `reports/cvrplib_ood/`: out-of-distribution evaluation on CVRPLIB sets A, B, E, P.
+- `reports/hgs_benchmark/`: PyVRP HGS speed-quality extension.
+- `reports/hyperparameter_tuning/`: paper-style grid-search supplement.
 - `reports/portfolio_audit/`: solver portfolio audit, including Gaskell.
 - `reports/presentation_handoff/`: slide-oriented numbers, outline, and Q&A notes.
+- `data/cvrplib/`: CVRPLIB benchmark instances (E-n51-k5 plus sets A, B, E, P with `.sol` optima).
 
 ## Reproduction Commands
 
@@ -146,6 +164,14 @@ Re-run the exact baseline and benchmark demo:
 
 ```bash
 uv run python -m cvrp_algorithm_selection.exact_baseline
+```
+
+Re-run the CVRPLIB out-of-distribution evaluation, the hyperparameter grid search, and the PyVRP HGS extension (the HGS run takes about 15 minutes: 45 instances x 20 s):
+
+```bash
+uv run python -m cvrp_algorithm_selection.cvrplib_ood
+uv run python -m cvrp_algorithm_selection.tuning
+uv run python -m cvrp_algorithm_selection.hgs_benchmark
 ```
 
 Run the compact notebook code cells in fast mode without requiring Jupyter:
@@ -175,11 +201,15 @@ Re-running the complete final solver experiment is intentionally not part of the
 - `src/cvrp_algorithm_selection/features.py`: pre-solution feature extraction.
 - `src/cvrp_algorithm_selection/experiments.py`: batch solver experiment runner.
 - `src/cvrp_algorithm_selection/ml_experiment.py`: final ML evaluation and integrity helpers.
+- `src/cvrp_algorithm_selection/cvrplib_ood.py`: CVRPLIB A/B/E/P out-of-distribution evaluation.
+- `src/cvrp_algorithm_selection/hgs_benchmark.py`: PyVRP HGS speed-quality extension.
+- `src/cvrp_algorithm_selection/tuning.py`: paper-style hyperparameter grid search.
 - `tests/`: focused unit and integration tests.
 
 ## Methodological Limitations
 
-- The ML selector is trained and tested on synthetic instances; only a single CVRPLIB benchmark demo probes out-of-distribution behavior.
-- The VBS is an oracle over the selected heuristic portfolio, not an exact optimum.
+- The ML selector is trained on synthetic instances. The CVRPLIB A/B/E/P evaluation shows partial transfer (within-1% rate improves over SBS, mean regret essentially tied); larger benchmark families (M, Golden, X) remain untested.
+- The VBS is an oracle over the selected heuristic portfolio, not an exact optimum (portfolio VBS averages +1.98% vs proven CVRPLIB optima).
 - Runtime is reported separately from the route-cost objective; the fixed time budget bounds it but does not reward faster solvers.
 - Feature importances are descriptive and predictive, not causal.
+- The frozen headline experiment predates the extension runs; extensions were produced with the pinned VeRyPy commit on Python 3.14 and record their environment versions in the artifacts.

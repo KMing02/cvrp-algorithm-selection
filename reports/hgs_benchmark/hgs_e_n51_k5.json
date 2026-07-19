@@ -1,0 +1,12 @@
+{
+  "benchmark": "E-n51-k5",
+  "best_known_cost": 521.0,
+  "hgs": {
+    "cost": 521.0,
+    "feasible": true,
+    "n_routes": 5,
+    "runtime_seconds": 20.0024427999997
+  },
+  "hgs_gap_to_best_known_percent": 0.0,
+  "time_budget_seconds": 20.0
+}

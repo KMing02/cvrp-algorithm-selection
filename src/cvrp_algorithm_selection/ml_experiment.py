@@ -6,8 +6,6 @@ import json
 import math
 import time
 import csv
-from collections import Counter, defaultdict
-from dataclasses import asdict
 from pathlib import Path
 from typing import Any
 
@@ -297,7 +295,7 @@ def run_ml_evaluation(output_dir: str | Path = REPORT_DIR) -> dict[str, Any]:
     (output / "selected_model_parameters.json").write_text(json.dumps(selected_params, indent=2, sort_keys=True))
 
     best_ml_name = _best_ml_model(metrics_df)
-    grouped = grouped_metrics(test, model_predictions[best_ml_name], prefixes)
+    grouped = grouped_metrics(test, model_predictions[best_ml_name], prefixes, fallback_solver=sbs_solver)
     (output / "grouped_metrics.json").write_text(json.dumps(grouped, indent=2, sort_keys=True))
 
     importance = feature_importance_reports(fitted_models["RandomForest"], X_test, y_test, features, output)
@@ -324,6 +322,36 @@ def run_ml_evaluation(output_dir: str | Path = REPORT_DIR) -> dict[str, Any]:
     (output / "experiment_summary.md").write_text(_summary_markdown(summary, metrics_df, grouped))
     (output / "ml_summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True))
     return summary
+
+
+def train_frozen_random_forest(
+    report_dir: str | Path = REPORT_DIR,
+) -> tuple[RandomForestClassifier, list[str], pd.DataFrame, pd.DataFrame]:
+    """Train the reported Random Forest on the frozen training split.
+
+    Returns ``(model, feature_names, train_df, test_df)`` where the split is
+    read from the frozen ``split_manifest.json``. Deterministic given the
+    frozen artifacts, RANDOM_STATE, and the installed scikit-learn version.
+    """
+
+    base = Path(report_dir)
+    df = pd.read_csv(base / "experiment_table.csv")
+    manifest = json.loads((base / "split_manifest.json").read_text())
+    features = json.loads((base / "feature_columns.json").read_text())
+    if features != feature_columns(df):
+        raise ValueError("frozen feature_columns.json does not match the experiment table")
+    train = df[df["instance_id"].isin(set(manifest["train_instance_ids"]))]
+    test = df[df["instance_id"].isin(set(manifest["test_instance_ids"]))]
+    model = RandomForestClassifier(
+        n_estimators=250,
+        max_depth=None,
+        min_samples_leaf=2,
+        class_weight="balanced",
+        random_state=RANDOM_STATE,
+        n_jobs=-1,
+    )
+    model.fit(train[features], train["best_solver"])
+    return model, features, train.reset_index(drop=True), test.reset_index(drop=True)
 
 
 def validate_label_minima(df: pd.DataFrame, prefixes: dict[str, str], tolerance: float = DEFAULT_TIE_TOLERANCE) -> None:
@@ -439,12 +467,25 @@ def evaluate_predictions(
     }
 
 
-def grouped_metrics(test: pd.DataFrame, predicted: np.ndarray, prefixes: dict[str, str]) -> dict[str, Any]:
+def grouped_metrics(
+    test: pd.DataFrame,
+    predicted: np.ndarray,
+    prefixes: dict[str, str],
+    fallback_solver: str | None = None,
+) -> dict[str, Any]:
+    def _selected_cost(row: pd.Series) -> float:
+        cost = float(row[f"{prefixes[row['_pred']]}_cost"])
+        if not math.isfinite(cost) and fallback_solver is not None:
+            cost = float(row[f"{prefixes[fallback_solver]}_cost"])
+        if not math.isfinite(cost):
+            raise ValueError(f"no feasible cost for prediction {row['_pred']} on {row.get('instance_id')}")
+        return cost
+
     result: dict[str, Any] = {}
     for field in ("spatial_family", "depot_position", "demand_regime", "customer_count", "best_solver"):
         result[field] = {}
         for value, group in test.assign(_pred=predicted).groupby(field):
-            selected = np.asarray([float(row[f"{prefixes[row['_pred']]}_cost"]) for _, row in group.iterrows()])
+            selected = np.asarray([_selected_cost(row) for _, row in group.iterrows()])
             vbs = group["best_cost"].astype(float).to_numpy()
             regret = (selected - vbs) / vbs
             result[field][str(value)] = {

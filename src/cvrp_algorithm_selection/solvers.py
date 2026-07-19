@@ -267,6 +267,13 @@ def candidate_solver_portfolio() -> list[SolverAdapter]:
 
 
 def benchmark(instance: CVRPInstance, seed: int | None = None) -> list[SolverResult]:
+    """Run the six-solver audit portfolio (no time budget) on one instance.
+
+    This is a diagnostic entry point. The ML selector experiment instead uses
+    ``final_ml_solver_portfolio()``, the five-solver portfolio in which every
+    solver runs under ``TIME_BUDGET_SECONDS``.
+    """
+
     return [solver.solve(instance, seed=seed) for solver in selected_solver_portfolio()]
 
 
