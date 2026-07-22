@@ -354,6 +354,13 @@ def train_frozen_random_forest(
     return model, features, train.reset_index(drop=True), test.reset_index(drop=True)
 
 
+def main() -> None:
+    """Entry point that produced the frozen final experiment; re-running is expensive."""
+
+    summary = run_ml_evaluation()
+    print(json.dumps({k: v for k, v in summary.items() if isinstance(v, (str, int, float))}, indent=2))
+
+
 def validate_label_minima(df: pd.DataFrame, prefixes: dict[str, str], tolerance: float = DEFAULT_TIE_TOLERANCE) -> None:
     for _, row in df.iterrows():
         feasible = []
@@ -632,3 +639,7 @@ def _summary_markdown(summary: dict[str, Any], metrics: pd.DataFrame, grouped: d
     for record in summary["feature_importance"]["random_forest_top10"]:
         lines.append(f"- `{record['feature']}`: {record['importance']:.4f}")
     return "\n".join(lines)
+
+
+if __name__ == "__main__":
+    main()

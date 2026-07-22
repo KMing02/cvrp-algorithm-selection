@@ -11,25 +11,26 @@ connects instance characteristics to individual solver behavior.
 
 **Format**: ~30 minutes total → **~20 minutes talk + ~10 minutes Q&A**.
 
-| # | Slide | Time | Cumulative |
-|---|---|---|---|
-| 1 | Title | 0:45 | 0:45 |
-| 2 | The problem: CVRP | 1:15 | 2:00 |
-| 3 | Exact solving hits a wall | 1:15 | 3:15 |
-| 4 | No single heuristic wins | 1:15 | 4:30 |
-| 5 | The solution: a learned meta-solver | 1:15 | 5:45 |
-| 6 | The portfolio | 1:00 | 6:45 |
-| 7 | 1,260 synthetic instances | 1:15 | 8:00 |
-| 8 | 38 features — three guesses | 1:30 | 9:30 |
-| 9 | How we measure a selector | 1:00 | 10:30 |
-| 10 | Main result | 1:45 | 12:15 |
-| 11 | Feature importance: expected vs observed | 1:30 | 13:45 |
-| 12 | Which characteristics favor which solver | 1:15 | 15:00 |
-| 13 | Where it works / struggles | 0:45 | 15:45 |
-| 14 | Transfer to real benchmarks | 1:30 | 17:15 |
-| 15 | Extension: HGS trade-off | 1:30 | 18:45 |
-| 16 | Limitations & takeaways | 1:00 | 19:45 |
-| 17 | Conclusion | 0:30 | 20:15 |
+
+| #  | Slide                                    | Time | Cumulative |
+| -- | ---------------------------------------- | ---- | ---------- |
+| 1  | Title                                    | 0:45 | 0:45       |
+| 2  | The problem: CVRP                        | 1:15 | 2:00       |
+| 3  | Exact solving hits a wall                | 1:15 | 3:15       |
+| 4  | No single heuristic wins                 | 1:15 | 4:30       |
+| 5  | The solution: a learned meta-solver      | 1:15 | 5:45       |
+| 6  | The portfolio                            | 1:00 | 6:45       |
+| 7  | 1,260 synthetic instances                | 1:15 | 8:00       |
+| 8  | 38 features — three guesses             | 1:30 | 9:30       |
+| 9  | How we measure a selector                | 1:00 | 10:30      |
+| 10 | Main result                              | 1:45 | 12:15      |
+| 11 | Feature importance: expected vs observed | 1:30 | 13:45      |
+| 12 | Which characteristics favor which solver | 1:15 | 15:00      |
+| 13 | Where it works / struggles               | 0:45 | 15:45      |
+| 14 | Transfer to real benchmarks              | 1:30 | 17:15      |
+| 15 | Extension: HGS trade-off                 | 1:30 | 18:45      |
+| 16 | Limitations & takeaways                  | 1:00 | 19:45      |
+| 17 | Conclusion                               | 0:30 | 20:15      |
 
 ---
 
@@ -139,11 +140,11 @@ connects instance characteristics to individual solver behavior.
 ## Slide 8 — 38 Features: Three Guesses (1:30)
 
 > So what does the model actually see? Thirty-eight features in five groups, all computable in
-> milliseconds. We built them around **three guesses** about what drives solver performance.
-> Guess one: **demand structure** — how big the demands are, how uneven they are, and how tightly
-> they fill the fleet. We capture that with capacity pressure and demand statistics. Guess two:
+> milliseconds. We built them around **three hypotheses** about what drives solver performance.
+> **hypothesis** one: **demand structure** — how big the demands are, how uneven they are, and how tightly
+> they fill the fleet. We capture that with capacity pressure and demand statistics. **hypothesis** two:
 > **depot geometry** — how central the depot sits, plus the paper's signature feature, ring
-> occupancy: the share of customers in five rings around the depot. Guess three: **overall
+> occupancy: the share of customers in five rings around the depot. **hypothesis** three: **overall
 > customer layout and instance size**.
 >
 > Just as important is what the model does *not* see. Solver results, labels, seeds, generator

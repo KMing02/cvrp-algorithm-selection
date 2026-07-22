@@ -271,7 +271,6 @@ def run_hgs_on_benchmark_instance(
 
 
 def _environment_versions() -> dict[str, str]:
-    import pyvrp
     import sklearn
 
     return {

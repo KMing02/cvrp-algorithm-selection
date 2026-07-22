@@ -16,10 +16,6 @@ def euclidean_distance_matrix(instance: CVRPInstance) -> np.ndarray:
     return distance_matrix(instance)
 
 
-def route_demand(instance: CVRPInstance, route: list[int]) -> float:
-    return float(sum(instance.demands[node] for node in route))
-
-
 def route_cost(instance: CVRPInstance, route: list[int], distance_matrix: np.ndarray | None = None) -> float:
     """Cost of a depot-delimited route whose stored representation omits depot."""
 

@@ -186,7 +186,11 @@ Validate saved final labels and metric integrity:
 uv run python -c "import math, pandas as pd; from pathlib import Path; from cvrp_algorithm_selection.ml_experiment import final_solver_prefixes, validate_label_minima; base=Path('reports/final_ml_experiment'); df=pd.read_csv(base/'experiment_table.csv'); validate_label_minima(df, final_solver_prefixes()); metrics=pd.read_csv(base/'model_metrics.csv'); assert len(df)==1260; assert metrics.select_dtypes(include='number').map(math.isfinite).all().all(); vbs=metrics[metrics.method=='VBS'].iloc[0]; assert abs(vbs.mean_regret)<1e-12 and abs(vbs.mean_cost_ratio-1.0)<1e-12; print('integrity ok')"
 ```
 
-Re-running the complete final solver experiment is intentionally not part of the fast reproduction path; it is substantially slower than loading the frozen outputs.
+Re-running the complete final solver experiment is intentionally not part of the fast reproduction path; it is substantially slower than loading the frozen outputs. Its entry point is:
+
+```bash
+uv run python -m cvrp_algorithm_selection.ml_experiment
+```
 
 ## Project Structure
 

@@ -121,16 +121,6 @@ def final_dataset_configs(
     ]
 
 
-def generate_development_dataset(
-    seeds: tuple[int, ...] = (0, 1),
-    distance_convention: DistanceConvention = "cvrplib_euc_2d",
-) -> list[CVRPInstance]:
-    return [
-        generate_synthetic_instance(config)
-        for config in development_dataset_configs(seeds=seeds, distance_convention=distance_convention)
-    ]
-
-
 def _generate_customer_coordinates(config: SyntheticCVRPConfig, rng: np.random.Generator) -> np.ndarray:
     n = config.n_customers
     family = config.spatial_family

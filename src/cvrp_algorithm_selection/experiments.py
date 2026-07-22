@@ -5,7 +5,6 @@ from __future__ import annotations
 import csv
 import json
 import math
-import time
 from collections import Counter, defaultdict
 from collections.abc import Iterable
 from dataclasses import asdict
@@ -217,17 +216,6 @@ def feature_quality_report(rows: list[dict[str, Any]]) -> dict[str, Any]:
         if values and max(values) == min(values):
             constant.append(key)
     return {"non_finite_features": non_finite, "constant_features": constant}
-
-
-def run_development_experiment(output_dir: str | Path = "reports/development_experiment") -> dict[str, Any]:
-    from cvrp_algorithm_selection.synthetic import development_dataset_configs, generate_synthetic_instance
-
-    configs = development_dataset_configs()
-    instances = [generate_synthetic_instance(config) for config in configs]
-    started = time.perf_counter()
-    rows = run_experiment_table(instances, seed=0)
-    elapsed = time.perf_counter() - started
-    return write_experiment_outputs(rows, output_dir, generation_configs=configs, elapsed_seconds=elapsed)
 
 
 def _base_row(instance: CVRPInstance) -> dict[str, Any]:
